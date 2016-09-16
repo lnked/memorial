@@ -43,8 +43,8 @@ var app = app || {};
                 that._mapObject = new ymaps.Map(data.id, {
                     center: [data.coords[0], data.coords[1]],
                     zoom: 13,
-                    controls: ['zoomControl', 'searchControl', 'typeSelector', 'fullscreenControl']
-                }),
+                    controls: ['smallMapDefaultSet']
+                });
 
                 that._mapObject.behaviors.disable('scrollZoom');
 
@@ -54,7 +54,7 @@ var app = app || {};
                 that._mapObject.geoObjects
                     .add(new ymaps.Placemark([data.coords[0], data.coords[1]], {}, {
                         preset: 'islands#dotIcon',
-                        iconColor: '#735184'
+                        iconColor: '#1e98ff'
                     }))
 
             });
@@ -63,7 +63,6 @@ var app = app || {};
 
         init: function() {
             var that = this;
-
             if ($('.j-map').length) {
                 $('.j-map').each(function(){
                     that.drowMap($(this));

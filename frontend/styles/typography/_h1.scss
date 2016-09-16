@@ -1,0 +1,18 @@
+h1 {
+    color: $c-baker-chocolate;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    font-family: $font-italic;
+    text-transform: uppercase;
+    background: url(/images/separator.png) 50% 100% no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5) {
+    h1 {
+        background-image: url(/images/separator@2x.png);
+        background-size: 134px 11px;
+    }
+}

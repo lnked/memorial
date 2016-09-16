@@ -1,0 +1,14 @@
+.contacts {
+    clear: both;
+    color: $c-black;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &__color{
+        color: $c-gold;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}

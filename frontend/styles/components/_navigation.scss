@@ -28,38 +28,46 @@
     &__list {
         font-size: 0;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
     }
     
     &__item {
-        line-height: 1;
-        display: inline-block;
-        vertical-align: middle;
+        float: left;
+        position: relative;
 
         &:not(:last-child) {
             &:after {
                 color: $c-shadow;
                 content: "|";
                 font-size: 1.3rem;
-                line-height: 1;
-                margin: 0 29px;
                 vertical-align: top;
                 display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                margin-left: -3px;
+                bottom: 0;
             }
         }
     }
 
     &__link {
+        display: block;
         color: $c-golden-glow;
         font-size: 1.3rem;
-        line-height: 1;
+        padding: 0 29px;
+        height: 70px;
         text-decoration: none;
         text-transform: uppercase;
         transition: color $a-time;
 
         &:hover, &._current {
             color: $c-white;
-        }    
+        }
+
+        &._current {
+            background-color: $c-black;
+        }
     }
 
     &__consult {

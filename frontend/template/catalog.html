@@ -13,21 +13,15 @@
 
     <div class="layout-wrapper__pusher">
 
+        @@include('./components/_breadcrumbs.html', {
+            "page1": "Ритуальные товары",
+            "page2": "Гробы",
+            "page3": "Гробы полированные"
+        })
+        
         <div class="layout-wrapper__container clearfix">
-
-            @@include('./components/_sidebar.html')
             
-            <div class="content clearfix">
-                
-                @@include('./components/_breadcrumbs.html', {
-                    "page1": "Главная",
-                    "page2": "",
-                    "page3": ""
-                })
-
-                <h1></h1>
-
-            </div>
+            <h1>гробы полированные</h1>
             
         </div>
 

@@ -2,8 +2,9 @@
     clear: both;
     position: relative;
     height: $header-height;
-    margin-bottom: 40px;
     background-color: $c-baker-chocolate;
+    
+    // margin-bottom: 40px;
 
     &:before {
         width: 100%;
