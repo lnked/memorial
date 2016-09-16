@@ -1,0 +1,26 @@
+.links {
+    clear: both;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 45px;
+    list-style-type: disc;
+
+    &__item {
+        margin: 0 20px;
+        display: inline-block;
+        vertical-align: top;
+
+        &__link {
+            color: $c-cherokee;
+            font-size: 1.4rem;
+            text-decoration: none;
+            border-bottom: 1px dashed;
+            transition: all $a-time ease;
+
+            &:hover {
+                color: #fff;
+                border-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.decoration {
+    clear: both;
+    padding-top: 35px;
+    background: url(/images/separator.png) 50% 0 no-repeat;
+
+    &._bottom {
+        padding-top: 0;
+        padding-bottom: 35px;
+        background-position: 50% 100%;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5) {
+    .decoration {
+        background-image: url(/images/separator@2x.png);
+        background-size: 134px 11px;
+    }
+}

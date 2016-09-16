@@ -1,0 +1,28 @@
+.contact {
+    clear: both;
+    font-size: 0;
+    padding: 25px 0 20px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    &__item {
+        width: 33.333333333%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+
+        &__title {
+            color: $c-gold;
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        &__content {
+            color: #252525;
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
+    }
+}

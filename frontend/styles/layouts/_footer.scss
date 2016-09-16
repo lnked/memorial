@@ -1,0 +1,45 @@
+.layout-footer {
+    clear: both;
+    position: relative;
+    height: $footer-height;
+    margin-top: -$footer-height;
+    background-color: $c-black;
+    
+    &__wrapper {
+        @extend %layout;
+        padding: 30px 0;
+    }
+
+    &__checking-account {
+        color: $c-suva-grey;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__copiright {
+        color: $c-suva-grey;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    &__web-studio {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

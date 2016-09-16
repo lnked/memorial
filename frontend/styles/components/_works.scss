@@ -1,0 +1,36 @@
+.works {
+    clear: both;
+    padding: 50px 0;
+    margin-bottom: 35px;
+    background-color: #6b544b;
+    background-image: url(/images/flowers.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    
+    &._np {
+        padding-top: 0;
+    }
+
+    &__title {
+        clear: both;
+        color: $c-white;
+        font-size: 3rem;
+        font-family: $font-italic;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    &__header {
+        padding: 50px 0 25px;
+        text-align: center;
+        color: $c-white;
+        font-size: 3rem;
+        line-height: 1.4;
+        font-family: $font-italic;
+        background-color: #3c1e00;
+        background-color: rgba(60, 30, 0, .5)
+    }
+}

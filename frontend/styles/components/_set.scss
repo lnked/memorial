@@ -1,0 +1,57 @@
+.ti {
+    clear: both;
+    color: $c-baker-chocolate;
+    font-family: $font-italic;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.set {
+    clear: both;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 70px;
+
+    &__item {
+        width: 30%;
+        padding: 0 25px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+
+        &__icon {
+            width: 90px;
+            height: 90px;
+            font-size: 0;
+            text-align: center;
+            line-height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            background-color: $c-baker-chocolate;
+
+            &__src {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        
+        &__title, &__description {
+            color: $c-black;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+
+        &__title {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &__description {
+            font-weight: 400;
+        }
+    }
+}

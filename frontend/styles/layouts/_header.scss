@@ -1,0 +1,47 @@
+.layout-header {
+    clear: both;
+    position: relative;
+    height: $header-height;
+    margin-bottom: 40px;
+    background-color: $c-baker-chocolate;
+
+    &:before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background: url(/images/header-image.jpg) 50% 0 no-repeat;
+        background-size: 100% auto;
+    }
+
+    &._main {
+        height: $header-height-main;
+    }
+
+    &__wrapper {
+        @extend %layout;
+        z-index: 2;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 110px;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

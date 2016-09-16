@@ -1,0 +1,8 @@
+.slider {
+    height: 660px;
+    outline: 1px solid blue;
+
+    &__wrapper {
+        @extend %layout;
+    }
+}

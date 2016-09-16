@@ -1,0 +1,30 @@
+blockquote {
+    max-width: 960px;
+    color: $c-black;
+    font-size: 1.6rem;
+    line-height: 1.375;
+    font-family: $font-italic;
+    font-style: italic;
+    position: relative;
+    margin: 0 auto 50px;
+    padding: 0 100px 20px;
+    
+    &:before, &:after {
+        width: 54px;
+        height: 41px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(/images/quote.png) 0 0 no-repeat;
+    }
+
+    &:before {
+        left: 0;
+        top: 35px;
+    }
+
+    &:after {
+        right: 0;
+        bottom: 0;
+    }
+}
