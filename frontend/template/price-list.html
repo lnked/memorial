@@ -1,0 +1,80 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "service"
+    })
+
+    @@include('./components/_breadcrumbs.html', {
+        "page1": "Ритуальные услуги",
+        "page2": "Похороны",
+        "page3": "Цены на ритуальные услуги "
+    })
+
+    <div class="layout-wrapper__pusher _no-push">
+    
+        <div class="layout-wrapper__color">
+            <div class="layout-wrapper__container clearfix">
+                
+                <h1>Цены на ритуальные услуги</h1>
+                
+                <article class="gallery j-gallery clearfix" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/1.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/2.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/3.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+
+                        <figcaption>
+                            
+                        </figcaption>
+                    </figure>
+
+                </article>
+
+            </div>
+
+        </div>
+        
+        <div class="layout-wrapper__container clearfix">
+            <h2>Индивидуальный заказ</h2>
+            <p>Вместе с нашим распорядителем похорон вы сможете составить индивидуальный набор услуг и выбрать ритуальные принадлежности из более чем 1000 вариантов.<br>Это можно сделать по каталогу, вызвав распорядителя или посетив похоронный дом.</p>
+            
+            <div class="layout-phone">
+                <div class="layout-phone__title">Мы поможем Вам подобрать подходящий памятник, соответствующий Вашим требованиям и бюджету. <br>Звоните нам по телефону с 9:00 до 18:00:</div>
+                <div class="layout-phone__item">
+                    <a href="" class="layout-phone__item__link">+ 7 861 222 25 61</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

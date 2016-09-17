@@ -1,0 +1,10 @@
+a {
+    &:not([class]) {
+        color: #d69c05;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "service"
+    })
+
+    @@include('./components/_breadcrumbs.html', {
+        "page1": "Ритуальные услуги",
+        "page2": "Изготовление памятников",
+        "page3": "Примеры наших работ"
+    })
+
+    <div class="layout-wrapper__pusher _no-push">
+    
+        <div class="layout-wrapper__color">
+            <div class="layout-wrapper__container clearfix">
+                
+                <h1>примеры наших работ</h1>
+                
+                <article class="gallery j-gallery clearfix" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/1.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/2.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/3.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/4.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/5.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
+                            <span class="gallery__item__image">
+                                <img src="/images/example/6.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
+                            </span>
+                        </a>
+                    </figure>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        @@include('./components/_pagination.html')
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

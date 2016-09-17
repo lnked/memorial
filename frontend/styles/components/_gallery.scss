@@ -3,7 +3,7 @@
     font-size: 0;
     line-height: 0;
     margin: 0 -30px;
-    
+
     &__item {
         width: 33.333333333%;
         display: inline-block;
@@ -16,6 +16,7 @@
             display: block;
             font-size: 0;
             padding: 20px;
+            outline: none;
             position: relative;
             background-color: $c-white;
             border: 1px solid #e2e2e2;
