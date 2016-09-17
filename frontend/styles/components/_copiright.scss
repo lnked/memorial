@@ -1,3 +1,35 @@
 .copiright {
     color: $c-suva-grey;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+
+    &__text {
+        padding: 0 37px;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        &:before, &:after {
+            width: 30px;
+            height: 21px;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        &:before {
+            left: 0;
+            background-image: url(/images/decor-l.png);
+        }
+
+        &:after {
+            right: 0;
+            background-image: url(/images/decor-r.png);
+        }
+    }
 }
