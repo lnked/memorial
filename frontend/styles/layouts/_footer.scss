@@ -7,7 +7,12 @@
     
     &__wrapper {
         @extend %layout;
+        height: $footer-height - $footer-contacts;
         padding: 30px 0;
+    }
+
+    &__contacts {
+        background-color: #f0ebdc;
     }
 
     &__checking-account {

@@ -7,6 +7,7 @@ $a-long-time:                   .7s;
 $font-base:                     10px;
 $font-family:                   'Open Sans', sans-serif;
 $font-italic:                   Georgia, sans-serif;
+$font-rouble:                   Rouble, sans-serif;
 $font-arial:                    Arial, Helvetica, sans-serif;
 $font-forms:                    Arial, Helvetica, sans-serif;
 
@@ -35,19 +36,23 @@ $c-banana-mania:                #FFE8B0;
 $c-shadow:                      #847349;
 $c-gamboge:                     #D69C05;
 $c-cherokee:                    #F4C981;
-$c-hint-of-red:                 #F4F2F1;
+$c-hint-of-red:                 #f4f2f1;
+$c-golden-sand:                 #EDCA70;
+$c-romance:                     #f4f2ec;
 
 $c-border-color:                #eee;
 
 // SIZE
-$layout-width:                  1260px;
+// $layout-width:                  1260px;
+$layout-width:                  1100px;
 $layout-margin:                 10px;
 
 $header-height:                 200px;
 $header-height-main:            660px;
 
-$footer-margin:                 0;
-$footer-height:                 219px;
+$footer-margin:                 50px;
+$footer-contacts:               109px;
+$footer-height:                 328px;
 
 $sidebar-width:                 200px;
 $sidebar-margin:                20px;

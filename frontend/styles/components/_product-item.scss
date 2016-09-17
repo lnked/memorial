@@ -1,0 +1,200 @@
+.product-item {
+    
+    &__preview {
+        width: 470px;
+        float: left;
+        margin-right: -470px;
+
+        &__zoom {
+            width: 100%;
+            font-size: 0;
+            line-height: 0;
+            position: relative;
+            text-align: center;
+            margin-bottom: 10px;
+
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+            
+            &__image {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid #e2e2e2;
+                transition: border-color $a-time;
+
+                &:after {
+                    content: "";
+                    width: 31px;
+                    height: 35px;
+                    position: absolute;
+                    top: 15px;
+                    right: 16px;
+                    background: url(/images/zoom.png) 0 0 no-repeat;
+                }
+
+                &:before {
+                    content: "";
+                    height: 100%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                &:hover {
+                    border-color: $c-golden-sand;
+                }
+
+                img {
+                    max-width: 100%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &__list {
+            clear: both;
+            font-size: 0;
+            line-height: 0;
+            margin: 0 -5px;
+        }
+
+        &__item {
+            width: 150px;
+            height: 150px;
+            margin: 0 5px 10px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #e2e2e2;
+            transition: border-color $a-time;
+
+            &:before {
+                content: "";
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                border-color: $c-golden-sand;
+            }
+
+            img {
+                max-width: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        float: left;
+        padding-left: 564px;
+
+        &._no-photo {
+            padding-left: 0;
+        }
+    }
+
+    &__name {
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        background: url(/images/articles-dash.png) 50% 100% no-repeat;
+    }
+
+    &__description {
+        color: $c-black;
+        font-size: 1.6rem;
+        line-height: 1.56;
+        margin-bottom: 40px;
+
+        dl {
+            clear: both;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        dt {
+            clear: both;
+            float: left;
+            padding: 0;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        dd {
+            padding: 0;
+            margin: 0;
+            float: left;
+            margin-left: 5px;
+            font-style: italic;
+        }
+    }
+
+    &__offers {
+        width: 378px;
+        height: 180px;
+        color: $c-black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        padding-top: 45px;
+        border-radius: 6px;
+        text-align: center;
+        background-color: $c-romance;
+        border: 1px solid $c-hint-of-red;
+
+        &__row {
+            clear: both;
+            margin-bottom: 15px;
+        }
+
+        &__price {
+            color: $c-baker-chocolate;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        &__currency {
+            color: $c-baker-chocolate;
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: $font-rouble;
+
+            &__value {
+                display: none;
+            }
+        }
+
+        &__button {
+            text-align: center;
+        }
+    }
+
+    &__to-cart {
+        height: 40px;
+        padding: 0 40px;
+        display: inline-block;
+        background-color: $c-gamboge;
+        color: $c-white;
+        font-family: $font-italic;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 40px;
+        text-decoration: none;
+        
+    }
+}

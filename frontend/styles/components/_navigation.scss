@@ -52,11 +52,11 @@
     }
 
     &__link {
-        display: block;
+        height: 70px;
         color: $c-golden-glow;
         font-size: 1.3rem;
-        padding: 0 29px;
-        height: 70px;
+        padding: 0 27px;
+        display: block;
         text-decoration: none;
         text-transform: uppercase;
         transition: color $a-time;
@@ -80,7 +80,7 @@
         display: inline-block;
         vertical-align: middle;
         border-radius: 3px;
-        margin-left: 40px;
+        margin-left: 11px;
         border: 1px solid $c-shadow;
         transition: border-color $a-time, color $a-time;
 

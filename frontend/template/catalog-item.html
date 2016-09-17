@@ -1,0 +1,90 @@
+@@include('./components/_meta.html', {
+    "title": "Index",
+    "bodyclass": ""
+})
+
+@@include('./components/_svgstore.html')
+
+<div class="layout-wrapper">
+
+    @@include('./components/_header.html', {
+        "current": "catalog"
+    })
+
+    @@include('./components/_breadcrumbs.html', {
+        "page1": "Ритуальные товары",
+        "page2": "Гробы",
+        "page3": "Гробы полированные"
+    })
+    
+    <div class="layout-wrapper__pusher">
+
+        <div class="layout-wrapper__container clearfix">
+
+            <h1>гробы полированные</h1>
+                
+            <article class="product-item clearfix" itemscope itemtype="http://schema.org/Product">
+                
+                <div class="product-item__preview" itemscope itemtype="http://schema.org/ImageObject">
+                    
+                    <div class="product-item__preview__zoom">
+                        <a href="" class="product-item__preview__zoom__image" itemprop="image">
+                            <img src="/images/product/large.jpg" itemprop="contentUrl" alt="image name">
+                        </a>
+                    </div>
+                    
+                    <div class="product-item__preview__list clearfix">
+                        <a href="" class="product-item__preview__item" itemprop="image">
+                            <img src="/images/product/small.jpg" itemprop="contentUrl" alt="image name">
+                        </a>
+
+                        <a href="" class="product-item__preview__item" itemprop="image">
+                            <img src="/images/product/small.jpg" itemprop="contentUrl" alt="image name">
+                        </a>
+
+                        <a href="" class="product-item__preview__item" itemprop="image">
+                            <img src="/images/product/small.jpg" itemprop="contentUrl" alt="image name">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="product-item__content">
+                
+                    <div class="product-item__name" itemprop="name">Гроб. Модель "Американец" (с лифтовым механизмом)</div>
+                    
+                    <div class="product-item__description" itemprop="description">
+                        <dl>
+                            <dt>Тип крышки:</dt>
+                            <dd>двухкрышечная</dd>
+
+                            <dt>Материал:</dt>
+                            <dd>красное дерево</dd>
+
+                            <dt>Покрытие:</dt>
+                            <dd>глянцевое</dd>
+                        </dl>
+                    </div>
+
+                    <div class="product-item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <div class="product-item__offers__row">
+                            от <span itemprop="price" class="product-item__offers__price">140 000</span> <span class="product-item__offers__currency">i<span class="product-item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                        </div>
+
+                        <div class="product-item__offers__button">
+                            <a href="" class="product-item__to-cart">Купить</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</div>
+
+@@include('./components/_footer.html')
+@@include('./components/_scripts.html')

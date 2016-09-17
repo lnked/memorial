@@ -1,15 +1,16 @@
 .contact {
     clear: both;
     font-size: 0;
-    padding: 25px 0 20px;
-    margin-bottom: 15px;
+    height: $footer-contacts;
     text-align: center;
+    line-height: $footer-contacts;
 
     &__item {
         width: 33.333333333%;
         text-align: center;
+        line-height: 0;
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
 
         &__title {
             color: $c-gold;

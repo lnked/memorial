@@ -2,6 +2,7 @@
     clear: both;
     height: 475px;
     position: relative;
+    margin-bottom: -$footer-margin;
     background-color: $c-hint-of-red;
 
     &__drow {

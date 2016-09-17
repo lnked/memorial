@@ -1,0 +1,123 @@
+.article-item {
+    clear: both;
+    margin-bottom: 40px;
+    padding-bottom: 45px;
+    background: url(/images/articles-dash.png) 50% 100% no-repeat;
+    
+    &._single {
+        margin-bottom: 0;
+    }
+
+    &__photo {
+        width: 232px;
+        height: 172px;
+        float: left;
+        padding: 6px;
+        display: block;
+        text-align: center;
+        margin-right: -232px;
+        border: 1px solid $c-hint-of-red;
+
+        &__src {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    
+    &__content {
+        width: 100%;
+        float: left;
+        padding-left: 265px;
+
+        &._no-photo {
+            padding-left: 0;
+        }
+    }
+
+    &__date {
+        color: $c-white;
+        height: 20px;
+        padding: 0 9px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 10px;
+        display: inline-block;
+        background-color: $c-golden-sand;
+        border-radius: 2px;
+    }
+
+    &__title {
+        clear: both;
+        color: $c-black;
+        display: block;
+        font-family: $font-italic;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 0.92;
+        margin-bottom: 15px;
+        text-decoration: none;
+    }
+
+    &__image {
+        clear: both;
+        font-size: 0;
+        text-align: center;
+        margin-bottom: 50px;
+
+        &__src {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+    &__body {
+        color: $c-black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 10px;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__description {
+        color: $c-black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 10px;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__more {
+        clear: both;
+
+        &__link {
+            color: #5f2f00;
+            font-family: $font-italic;
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1;
+            transition: color $a-time;
+
+            &:hover {
+                color: $c-gold;
+            }
+        }
+    }
+}
