@@ -81,7 +81,7 @@
                 vertical-align: middle;
             }
 
-            &:hover {
+            &:hover, &._current {
                 border-color: $c-golden-sand;
             }
 

@@ -7,6 +7,7 @@ var app = app || {};
         
         init: function() {
             this.map.init();
+            this.zoom.init();
             this.gallery.init();
         }
 
