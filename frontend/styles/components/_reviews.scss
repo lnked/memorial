@@ -1,0 +1,65 @@
+.reviews {
+    clear: both;
+    margin-bottom: 65px;
+
+    &__item {
+        clear: both;
+        padding-bottom: 45px;
+
+        &:not(:first-child) {
+            padding-top: 45px;
+        }
+
+        &:nth-child(even) {
+            background-color: $c-romance;
+        }
+
+        &__wrapper {
+            @extend %layout;
+            position: relative;
+            padding-left: 80px;
+            padding-right: 80px;
+
+            &:before, &:after {
+                width: 40px;
+                height: 35px;
+                position: absolute;
+                content: "";
+            }
+
+            &:before {
+                left: 0;
+                top: 0;
+                background-image: url(/images/quote-rev-left.png);
+            }
+
+            &:after {
+                right: 0;
+                bottom: 20px;
+                background-image: url(/images/quote-rev-right.png);
+            }
+        }
+
+        &__description {
+            color: $c-black;
+            font-family: $font-italic;
+            font-size: 1.6rem;
+            font-style: italic;
+            line-height: 1.38;
+            margin-bottom: 20px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        &__author {
+            color: $c-black;
+            font-family: $font-italic;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}
