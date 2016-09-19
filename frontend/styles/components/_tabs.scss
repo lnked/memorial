@@ -1,0 +1,36 @@
+.tabs {
+    clear: both;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 39px;
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__link {
+        min-width: 190px;
+        height: 39px;
+        color: $c-black;
+        line-height: 37px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 0 20px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #5f2f00;
+        transition: background-color $a-time, border-color $a-time;
+        
+        &:hover {
+            border-color: $c-gamboge;
+        }
+
+        &._current {
+            color: $c-white;
+            border-color: $c-gamboge;
+            background-color: $c-gamboge;
+        }
+    }
+}

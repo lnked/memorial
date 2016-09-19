@@ -19,42 +19,82 @@
 
     <div class="layout-wrapper__pusher _no-push">
     
-        <div class="layout-wrapper__color">
+        <div class="layout-wrapper__color _push">
             <div class="layout-wrapper__container clearfix">
                 
                 <h1>Цены на ритуальные услуги</h1>
                 
-                <article class="gallery j-gallery clearfix" itemscope itemtype="http://schema.org/ImageGallery">
+                <div class="price j-tabs-wrapper clearfix" itemscope itemtype="http://schema.org/ImageGallery">
 
-                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
-                            <span class="gallery__item__image">
-                                <img src="/images/example/1.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
-                            </span>
-                        </a>
-                    </figure>
+                    <ul class="tabs j-tabs">
+                        <li class="tabs__item"><a href="" class="tabs__link j-tabs-link">Захоронение</a></li>
+                        <li class="tabs__item"><a href="" class="tabs__link j-tabs-link _current">Кремация</a></li>
+                    </ul>
+                    
+                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <div class="price__item__block">
+                            <a href="" class="price__item__link" itemprop="contentUrl">
+                                <span class="price__item__image">
+                                    <img src="/images/example/1.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                </span>
 
-                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
-                            <span class="gallery__item__image">
-                                <img src="/images/example/2.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
-                            </span>
-                        </a>
-                    </figure>
-
-                    <figure class="gallery__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="/images/example/1.jpg" class="gallery__item__link zoom" itemprop="contentUrl">
-                            <span class="gallery__item__image">
-                                <img src="/images/example/3.jpg" width="340" height="250" class="gallery__item__image__src" itemprop="thumbnail" alt="">
-                            </span>
-                        </a>
-
-                        <figcaption>
+                                <span class="price__item__caption">Кремация класса «Эконом»</span>
+                            </a>
                             
-                        </figcaption>
-                    </figure>
+                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <div class="price__item__offers__price">
+                                    от <span itemprop="price" class="price__item__offers__price__cost">7 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                </div>
+                                <div class="price__item__offers__button">
+                                    <a href="" class="button">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                </article>
+                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <div class="price__item__block">
+                            <a href="" class="price__item__link" itemprop="contentUrl">
+                                <span class="price__item__image">
+                                    <img src="/images/example/2.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                </span>
+
+                                <span class="price__item__caption">Кремация класса «Стандарт»</span>
+                            </a>
+
+                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <div class="price__item__offers__price">
+                                    от <span itemprop="price" class="price__item__offers__price__cost">23 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                </div>
+                                <div class="price__item__offers__button">
+                                    <a href="" class="button">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <div class="price__item__block">
+                            <a href="" class="price__item__link" itemprop="contentUrl">
+                                <span class="price__item__image">
+                                    <img src="/images/example/3.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                </span>
+                                
+                                <span class="price__item__caption">Кремация класса «Элит»</span>
+                            </a>
+
+                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <div class="price__item__offers__price">
+                                    от <span itemprop="price" class="price__item__offers__price__cost">140 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                </div>
+                                <div class="price__item__offers__button">
+                                    <a href="" class="button">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
 
             </div>
 
