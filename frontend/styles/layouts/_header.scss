@@ -14,11 +14,15 @@
         right: 0;
         z-index: 1;
         background: url(/images/header-image.jpg) 50% 0 no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
     }
 
     &._main {
         height: $header-height-main;
+
+         &:before {
+            background: none;
+         }
     }
 
     &__wrapper {

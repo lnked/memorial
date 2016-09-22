@@ -1,0 +1,41 @@
+.about-item {
+    clear: both;
+    position: relative;
+    margin-bottom: 25px;
+    
+    p {
+        margin-bottom: 5px;
+    }
+    
+    &._icon-1,
+    &._icon-2 {
+        margin-top: 85px;
+        padding-top: 30px;
+        border-top: 1px solid #252525;
+        
+        &:before {
+            width: 106px;
+            height: 105px;
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            margin-left: -53px;
+            margin-bottom: -25px;
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+        }
+    }
+
+    &._icon-1 {
+        &:before {
+            background-image: url(/images/ico-angel.png);
+        }
+    }
+
+    &._icon-2 {
+        &:before {
+            background-image: url(/images/ico-flower.png);
+        }
+    }
+}

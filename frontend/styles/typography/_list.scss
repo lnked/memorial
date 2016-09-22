@@ -1,0 +1,45 @@
+ul, ol {
+    &:not([class]) {
+        margin-left: 35px;
+        margin-bottom: 20px;
+
+        li {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            position: relative;
+        }
+    }
+}
+
+ul {
+    &:not([class]) {
+        li {
+            padding-left: 21px;
+
+            &:before {
+                width: 16px;
+                height: 1px;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: 1px;
+                background-color: #000;
+            }
+        }
+    }
+
+    &.triangle {
+        margin-bottom: 20px;
+
+        li {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            padding-left: 35px;
+            position: relative;
+            background: url(/images/triangle.png) 0 50% no-repeat;
+        }
+    }
+}

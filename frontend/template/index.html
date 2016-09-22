@@ -1,6 +1,6 @@
 @@include('./components/_meta.html', {
     "title": "Index",
-    "bodyclass": ""
+    "bodyclass": "large-page"
 })
 
 @@include('./components/_svgstore.html')
@@ -8,7 +8,8 @@
 <div class="layout-wrapper">
 
     @@include('./components/_header.html', {
-        "current": "index"
+        "current": "index",
+        "addclass": "_main"
     })
 
     <div class="layout-wrapper__pusher">
@@ -152,9 +153,15 @@
                     </a>
                 </li>
             </ul>
+            
+        </div>
 
-            Подробнее о дополнительных ритуальных услугах, предоставляемых похоронным бюро "Мемориал" в Краснодаре вы можете узнать из каталога услуг
-
+        <div class="info">
+            <div class="info__wrapper">
+                <div class="info__content">
+                    <em>Подробнее о дополнительных ритуальных услугах, предоставляемых похоронным бюро "Мемориал" <br>в Краснодаре вы можете узнать из <a href="">каталога</a> услуг</em>
+                </div>
+            </div>
         </div>
 
         <div class="works _np clearfix">

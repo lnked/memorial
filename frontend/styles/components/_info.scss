@@ -1,0 +1,40 @@
+.info {
+    clear: both;
+    padding: 38px 0 50px;
+    position: relative;
+    background-color: $c-hint-of-red;
+    
+    &:before {
+        width: 78px;
+        height: 78px;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        display: block;
+        margin-top: -39px;
+        margin-left: -39px;
+        border-radius: 50%;
+        background: $c-hint-of-red url(/images/info.png) 50% 50% no-repeat;
+    }
+
+    &__wrapper {
+        @extend %layout;
+    }
+
+    &__content {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.39;
+        color: $c-black;
+        
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: $c-gamboge;
+            text-decoration: underline;
+        }
+    }
+}
