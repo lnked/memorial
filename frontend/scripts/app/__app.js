@@ -5,6 +5,14 @@ var app = app || {};
 
     app = {
         
+        initPopup: function()
+        {
+            $.popup.init('.j-open-popup', {
+                cssPosition: false,
+                wrapper: '.layout-wrapper'
+            });
+        },
+        
         warning: function() {
             $('body').on('click', function(e){
                 if ($('.j-warning-block._open').length) {
@@ -20,6 +28,7 @@ var app = app || {};
         },
 
         init: function() {
+            this.initPopup();
             this.warning();
             this.map.init();
             this.tabs.init();
