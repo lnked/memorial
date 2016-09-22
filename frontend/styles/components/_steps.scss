@@ -9,6 +9,10 @@
         vertical-align: top;
         text-align: center;
 
+        &._long {
+            width: 25%;
+        }
+
         &__icon {
             width: 80px;
             height: 80px;
@@ -30,6 +34,7 @@
                 position: absolute;
                 left: 50%;
                 top: 50%;
+                z-index: 2;
                 margin-top: -44px;
                 margin-left: -44px;
                 border: 1px solid $c-gamboge;
@@ -43,15 +48,21 @@
 
         &:not(:last-child) &__icon {
             &:after {
-                width: 253px;
+                width: 129px;
                 height: 22px;
                 content: "";
                 position: absolute;
                 top: 31px;
                 left: 100%;
+                z-index: 1;
                 margin-left: 3px;
-                width: 162px;
-                background: url(/images/steps-arrow.png) 50% 50% no-repeat;
+                background: url(../images/steps-arrow.png) 50% 50% no-repeat;
+            }
+        }
+
+        &._long:not(:last-child) &__icon {
+            &:after {
+                width: 184px;
             }
         }
 

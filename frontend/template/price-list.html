@@ -24,75 +24,158 @@
                 
                 <h1>Цены на ритуальные услуги</h1>
                 
-                <div class="price j-tabs-wrapper clearfix" itemscope itemtype="http://schema.org/ImageGallery">
+                <div class="price j-tab-wrapper clearfix" itemscope itemtype="http://schema.org/ImageGallery">
 
-                    <ul class="tabs j-tabs">
-                        <li class="tabs__item"><a href="" class="tabs__link j-tabs-link">Захоронение</a></li>
-                        <li class="tabs__item"><a href="" class="tabs__link j-tabs-link _current">Кремация</a></li>
+                    <ul class="tabs">
+                        <li class="tabs__item"><a href="#" data-tab="burial" class="tabs__link j-tab-trigger _current">Захоронение</a></li>
+                        <li class="tabs__item"><a href="#" data-tab="cremation" class="tabs__link j-tab-trigger">Кремация</a></li>
                     </ul>
-                    
-                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <div class="price__item__block">
-                            <a href="" class="price__item__link" itemprop="contentUrl">
-                                <span class="price__item__image">
-                                    <img src="/images/example/1.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
-                                </span>
 
-                                <span class="price__item__caption">Кремация класса «Эконом»</span>
-                            </a>
-                            
-                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <div class="price__item__offers__price">
-                                    от <span itemprop="price" class="price__item__offers__price__cost">7 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
-                                </div>
-                                <div class="price__item__offers__button">
-                                    <a href="" class="button">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="tab-content j-tab-item _open" id="tab-burial">
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/burial-econom.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
 
-                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <div class="price__item__block">
-                            <a href="" class="price__item__link" itemprop="contentUrl">
-                                <span class="price__item__image">
-                                    <img src="/images/example/2.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
-                                </span>
-
-                                <span class="price__item__caption">Кремация класса «Стандарт»</span>
-                            </a>
-
-                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <div class="price__item__offers__price">
-                                    от <span itemprop="price" class="price__item__offers__price__cost">23 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
-                                </div>
-                                <div class="price__item__offers__button">
-                                    <a href="" class="button">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <div class="price__item__block">
-                            <a href="" class="price__item__link" itemprop="contentUrl">
-                                <span class="price__item__image">
-                                    <img src="/images/example/3.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
-                                </span>
+                                    <span class="price__item__caption">Похороны класса «Эконом»</span>
+                                </a>
                                 
-                                <span class="price__item__caption">Кремация класса «Элит»</span>
-                            </a>
-
-                            <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                <div class="price__item__offers__price">
-                                    от <span itemprop="price" class="price__item__offers__price__cost">140 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
-                                </div>
-                                <div class="price__item__offers__button">
-                                    <a href="" class="button">Заказать</a>
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">7 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/burial-standart.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
+
+                                    <span class="price__item__caption">Похороны класса «Стандарт»</span>
+                                </a>
+                                
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">23 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/burial-elit.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
+
+                                    <span class="price__item__caption">Похороны класса «Элит»</span>
+                                </a>
+                                
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">140 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-content j-tab-item" id="tab-cremation">
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/1.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
+
+                                    <span class="price__item__caption">Кремация класса «Эконом»</span>
+                                </a>
+                                
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">7 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/2.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
+
+                                    <span class="price__item__caption">Кремация класса «Стандарт»</span>
+                                </a>
+
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">23 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="price__item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="price__item__block">
+                                <a href="" class="price__item__link" itemprop="contentUrl">
+                                    <span class="price__item__image">
+                                        <img src="/images/example/3.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
+                                    </span>
+                                    
+                                    <span class="price__item__caption">Кремация класса «Элит»</span>
+                                </a>
+
+                                <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                    <div class="price__item__offers__price">
+                                        от <span itemprop="price" class="price__item__offers__price__cost">140 000</span> <span class="price__item__offers__currency">i<span class="price__item__offers__currency__value" itemprop="priceCurrency">RUB</span></span>
+                                    </div>
+                                    <div class="price__item__offers__button">
+                                        <a href="" class="button">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <p>Поскольку в Краснодаре отсутствует крематорий, агентство «Мемориал» берёт на себя перевозку тела в Москву. Кремация тела позволяет минимизировать расходы, связанные с захоронением и приобретением места на кладбище.</p>
+
+                        <p>Услуга кремации от ООО «Мемориал»</p>
+
+                        <p>Как не прискорбно, но рано или поздно близкие и родные покидают этот мир. И теперь главная задача для вас – достойно провести их в далёкий путь и организовать церемонию прощания. Компания «Мемориал» осуществляет комплекс подготовительных услуг, связанных с подвержением тела усопшего данной процедуре. Услуга кремации предусматривает:</p>
+
+                        <ul class="triangle">
+                            <li>подготовку тела перед доставкой;</li>
+                            <li>предоставление гроба для отпевания и транспортировки на выбор заказчика;</li>
+                            <li>организацию прощания с усопшим;</li>
+                            <li>подбор урны для тлена умершего;</li>
+                            <li>сбор необходимых документов перед доставкой тела;</li>
+                            <li>непосредственно кремацию;</li>
+                            <li>предоставление дополнительных ритуальных услуг (вынос гроба, музыкальное сопровождение, обеспечение ритуальными принадлежностями).</li>
+                        </ul>
+                    </div>
 
                 </div>
 

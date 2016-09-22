@@ -3,5 +3,10 @@
 
     &__link {
         color: $c-gold;
+        transition: color $a-time;
+
+        &:hover {
+            color: $c-white;
+        }
     }
 }

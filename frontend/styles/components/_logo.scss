@@ -35,7 +35,7 @@
             margin-top: -50px;
             margin-left: -50px;
             z-index: 1;
-            background: url(/images/logo-eclipse.png) 50% 50% no-repeat;
+            background: url(../images/logo-eclipse.png) 50% 50% no-repeat;
         }
     
         &:before {
@@ -47,7 +47,7 @@
             right: 100%;
             margin-top: -19px;
             margin-right: -4px;
-            background: url(/images/logo-shorten.png) 0 50% no-repeat;
+            background: url(../images/logo-shorten.png) 0 50% no-repeat;
         }
     }
 
@@ -59,7 +59,7 @@
         padding: 0 45px 0 15px;
         line-height: 40px;
         letter-spacing: 0.2ex;
-        background: url(/images/logo-longer.png) no-repeat 0 0;
+        background: url(../images/logo-longer.png) no-repeat 0 0;
         
         &__decoration {
             padding: 0 39px;
@@ -80,12 +80,12 @@
 
             &:before {
                 left: 0;
-                background-image: url(/images/decoration-l.svg);
+                background-image: url(../images/decoration-l.svg);
             }
 
             &:after {
                 right: 0;
-                background-image: url(/images/decoration-r.svg);
+                background-image: url(../images/decoration-r.svg);
             }
         }
     }

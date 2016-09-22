@@ -97,37 +97,37 @@
 
             &._prev {
                 &:before {
-                    background-image: url(/images/pagination-prev.png);
+                    background-image: url(../images/pagination-prev.png);
                 }
                 &:after {
-                    background-image: url(/images/pagination-prev-active.png);
+                    background-image: url(../images/pagination-prev-active.png);
                 }
             }
 
             &._next {
                 &:before {
-                    background-image: url(/images/pagination-next.png);
+                    background-image: url(../images/pagination-next.png);
                 }
                 &:after {
-                    background-image: url(/images/pagination-next-active.png);
+                    background-image: url(../images/pagination-next-active.png);
                 }
             }
 
             &._first {
                 &:before {
-                    background-image: url(/images/pagination-first.png);
+                    background-image: url(../images/pagination-first.png);
                 }
                 &:after {
-                    background-image: url(/images/pagination-first-active.png);
+                    background-image: url(../images/pagination-first-active.png);
                 }
             }
 
             &._last {
                 &:before {
-                    background-image: url(/images/pagination-last.png);
+                    background-image: url(../images/pagination-last.png);
                 }
                 &:after {
-                    background-image: url(/images/pagination-last-active.png);
+                    background-image: url(../images/pagination-last-active.png);
                 }
             }
         }

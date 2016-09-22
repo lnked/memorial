@@ -22,6 +22,7 @@ var app = app || {};
         init: function() {
             this.warning();
             this.map.init();
+            this.tabs.init();
             this.gallery.init();
         }
 

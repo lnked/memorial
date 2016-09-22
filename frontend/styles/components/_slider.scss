@@ -17,7 +17,7 @@
         right: 0;
         bottom: 0;
         z-index: 1;
-        background: url(/images/slider-shadow.png) 50% 100% no-repeat;
+        background: url(../images/slider-shadow.png) 50% 100% no-repeat;
     }
 
     &__dots {
@@ -130,12 +130,25 @@
                 padding: 0 30px 0 75px;
                 border-radius: 2px;
                 display: inline-block;
+                position: relative;
                 border: 1px solid #fefefe;
                 background-color: rgba(255, 255, 255, 0.3);
                 transition: background-color $a-time ease, color $a-time ease;
 
                 &:hover {
                     background-color: rgba(237, 202, 112, 0.8);
+                }
+
+                &:before {
+                    content: "";
+                    width: 30px;
+                    height: 32px;
+                    position: absolute;
+                    left: 35px;
+                    top: 50%;
+                    margin-top: -15px;
+                    transition: opacity $a-time;
+                    background: url(../images/phone-icon-yellow.png) 50% 50% no-repeat;
                 }
             }
         }

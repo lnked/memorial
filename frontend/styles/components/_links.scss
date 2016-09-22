@@ -17,9 +17,14 @@
             border-bottom: 1px dashed;
             transition: all $a-time ease;
 
+            &._current {
+                color: #fff;
+                cursor: default;
+                border-bottom: 0;
+            }
+
             &:hover {
                 color: #fff;
-                border-bottom: 0;
             }
         }
     }

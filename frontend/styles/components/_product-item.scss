@@ -36,7 +36,7 @@
                     position: absolute;
                     top: 15px;
                     right: 16px;
-                    background: url(/images/zoom.png) 0 0 no-repeat;
+                    background: url(../images/zoom.png) 0 0 no-repeat;
                 }
 
                 &:before {
@@ -110,7 +110,7 @@
         line-height: 1.5;
         margin-bottom: 30px;
         padding-bottom: 20px;
-        background: url(/images/articles-dash.png) 50% 100% no-repeat;
+        background: url(../images/articles-dash.png) 50% 100% no-repeat;
     }
 
     &__description {
