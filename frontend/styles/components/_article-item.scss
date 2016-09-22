@@ -16,6 +16,8 @@
         display: block;
         text-align: center;
         margin-right: -232px;
+        position: relative;
+        z-index: 10;
         border: 1px solid $c-hint-of-red;
 
         &__src {

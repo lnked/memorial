@@ -8,11 +8,19 @@
         padding-bottom: 35px;
         background-position: 50% 100%;
     }
+
+    &._white {
+        background-image: url(/images/separator-white.png);
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5) {
     .decoration {
         background-image: url(/images/separator@2x.png);
         background-size: 134px 11px;
+
+        &._white {
+            background-image: url(/images/separator-white@2x.png);
+        }
     }
 }

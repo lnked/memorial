@@ -23,12 +23,16 @@
 
     &__container {
         @extend %layout;
+
+        &._large {
+            max-width: $layout-width-large;
+        }
     }
 }
 
-.large-page .layout-wrapper__container {
-    max-width: $layout-width-large;
-}
+// .large-page .layout-wrapper__container {
+//     max-width: $layout-width-large;
+// }
 
 @media only screen and (max-width: 1280px) {}
 @media only screen and (max-width: 1140px) {}

@@ -4,56 +4,89 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    
+
     &__sign {
         width: 100px;
         height: 100px;
         text-align: center;
         position: absolute;
-        // left: 0;
         margin-left: -95px;
         z-index: 10;
         top: 50%;
         font-size: 0;
         line-height: 100px;
         margin-top: -50px;
-        background-color: rgba(0,0,0,.6);
         border-radius: 50%;
 
         &__src {
+            position: relative;
+            z-index: 2;
             display: inline-block;
             vertical-align: middle;
+        }
+
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            z-index: 1;
+            background: url(/images/logo-eclipse.png) 50% 50% no-repeat;
+        }
+    
+        &:before {
+            width: 31px;
+            height: 38px;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -19px;
+            margin-right: -4px;
+            background: url(/images/logo-shorten.png) 0 50% no-repeat;
         }
     }
 
     &__name {
+        width: 598px;
         height: 40px;
         display: inline-block;
         position: relative;
-        padding: 0 65px 0 55px;
+        padding: 0 45px 0 15px;
         line-height: 40px;
-        background-color: rgba(0,0,0,.6);
-    
-        &:before, &:after {
-            width: 31px;
-            height: 23px;
-            content: "";
-            position: absolute;
-            top: 50%;
-            margin-top: -11px;
+        letter-spacing: 0.2ex;
+        background: url(/images/logo-longer.png) no-repeat 0 0;
+        
+        &__decoration {
+            padding: 0 39px;
+            position: relative;
             display: inline-block;
-            background-position: 0 50%;
-            background-repeat: no-repeat;
-        }
 
-        &:before {
-            left: 15px;
-            background-image: url(/images/decoration-l.svg);
-        }
+            &:before, &:after {
+                width: 31px;
+                height: 23px;
+                content: "";
+                position: absolute;
+                top: 50%;
+                margin-top: -11px;
+                display: inline-block;
+                background-position: 0 50%;
+                background-repeat: no-repeat;
+            }
 
-        &:after {
-            right: 25px;
-            background-image: url(/images/decoration-r.svg);
+            &:before {
+                left: 0;
+                background-image: url(/images/decoration-l.svg);
+            }
+
+            &:after {
+                right: 0;
+                background-image: url(/images/decoration-r.svg);
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
     &__wrapper {
         @extend %layout;
         z-index: 2;
+        max-height: $header-height;
     }
 
     &__logo {

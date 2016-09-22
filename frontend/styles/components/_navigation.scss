@@ -1,5 +1,5 @@
 .navigation {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -82,11 +82,12 @@
         border-radius: 3px;
         margin-left: 11px;
         border: 1px solid $c-shadow;
-        transition: border-color $a-time, color $a-time;
+        transition: background-color $a-time, border-color $a-time, color $a-time;
 
         &:hover {
             color: $c-white;
-            border-color: $c-white;
+            border-color: #888888;
+            background-color: #000000;
         }
     }
     
