@@ -32,8 +32,8 @@ $mfp-iframe-ratio:                    9/16 !default;                       // Ra
 // Image-type options
 $mfp-include-image-type:              true !default;                       // Enable Image-type popups
 $mfp-image-background:                #444 !default;
-$mfp-image-padding-top:               40px !default;                       // Image padding top
-$mfp-image-padding-bottom:            40px !default;                       // Image padding bottom
+$mfp-image-padding-top:               0px !default;                       // Image padding top
+$mfp-image-padding-bottom:            0px !default;                       // Image padding bottom
 $mfp-include-mobile-layout-for-image: true !default;                       // Removes paddings from top and bottom
 
 // Image caption options
@@ -219,11 +219,14 @@ $mfp-use-visuallyhidden:              false !default;                      // Hi
 
 // CSS-reset for buttons
 button {
-  &.mfp-close,
+  &.mfp-arrow {
+    background: transparent;
+  }
+  
+  &.mfp-close,  
   &.mfp-arrow {
     overflow: visible;
     cursor: pointer;
-    background: transparent;
     border: 0;
     -webkit-appearance: none;
     display: block;
@@ -239,48 +242,29 @@ button {
   }
 }
 
+.mfp-figure {
+  padding: 25px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,.7);
+}
 
 // Close icon
 .mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 0;
   text-decoration: none;
   text-align: center;
   opacity: $mfp-controls-opacity;
-  padding: 0 0 18px 10px;
-  color: $mfp-controls-color;
-
-  font-style: normal;
-  font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  background: rgba(0,0,0,.7) url(../images/close-large.png) no-repeat 50% 50%;
+  font-size: 0;
 
   &:hover,
   &:focus {
     opacity: 1;
-  }
-
-  &:active {
-    top: 1px;
-  }
-}
-.mfp-close-btn-in {
-  .mfp-close {
-    color: $mfp-inner-close-icon-color;
-  }
-}
-.mfp-image-holder,
-.mfp-iframe-holder {
-  .mfp-close {
-    color: $mfp-controls-color;
-    right: -6px;
-    text-align: right;
-    padding-right: 6px;
-    width: 100%;
   }
 }
 
