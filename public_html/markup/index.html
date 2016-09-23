@@ -23,14 +23,14 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
+    
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
     <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
-    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title itemprop="name">Index</title>
 </head>
 <body>
@@ -163,46 +163,49 @@
 
 <div class="overlay" id="overlay"></div>
 
-<template id="tmpl-popup-demo">
-    <div class="popup" id="popup-demo">
-        <div class="popup__dialog">
-            <section class="popup__content">
-                <b class="popup__close js-popup-close">Закрыть</b>
-                
-            </section>
-        </div>
-    </div>
-</template>
-
-<template id="tmpl-popup-service">
-    <div class="popup" id="popup-service">
-        <div class="popup__dialog">
-            <section class="popup__content">
-                <b class="popup__close js-popup-close">Закрыть</b>
-                
-                <header class="popup__header">
-                    <h4 class="popup__header__title">Заказать услуги</h4>
-                </header>
-
-                <article class="popup__body">
-
-                </article>
-            </section>
-        </div>
-    </div>
-</template>
-
 <script type="text/html" id="tmpl-popup-feedback">
     <div class="popup" id="popup-feedback">
         <div class="popup__dialog">
             <section class="popup__content">
-                <b class="popup__close js-popup-close">Закрыть</b>
+                <b class="popup__close js-popup-close"></b>
                 
                 <header class="popup__header">
                     <h4 class="popup__header__title">Заказать услуги</h4>
                 </header>
 
                 <article class="popup__body">
+
+                    <form action="/json/form.json" method="POST" class="form form-ajax form-reset">
+                        <div class="f-label">
+                            <input name="name" placeholder="Имя*" class="c-input">
+                        </div>
+
+                        <div class="f-label">
+                            <input name="email" placeholder="E-mail" class="c-input">
+                        </div>
+
+                        <div class="f-label">
+                            <input name="phone" placeholder="Телефон*" class="c-input">
+                        </div>
+
+                        <div class="f-label">
+                            <input name="product" placeholder="Товар" class="c-input">
+                        </div>
+
+                        <div class="f-label">
+                            <textarea name="message" placeholder="Сообщение" cols="30" rows="10" class="c-textarea"></textarea>
+                        </div>
+
+                        <div class="captcha">
+                            <div class="g-recaptcha" data-sitekey="6LeIcAcUAAAAAARmd4UUIkkUChZsgUiK2rsDJZ26"></div>
+                        </div>
+
+                        <div class="f-error-text form__error-message j-error-message"></div>
+                        
+                        <div class="f-button">
+                            <button type="submit" class="button">Отправить</button>
+                        </div>
+                    </form>
 
                 </article>
             </section>

@@ -1,20 +1,9 @@
 .captcha {
     clear: both;
-    
-    &__image {
-        width: 120px;
-        float: left;
-        border: 1px solid #eee;
-        box-sizing: border-box;
-        overflow: hidden;
-        
-        &__trigger {
-            display: block;
-            cursor: pointer;
-        }
-    }
+    margin-bottom: 40px;
+}
 
-    &__field {
-        margin-left: 135px;
-    }
+.g-recaptcha {
+    transform: scale(1.355);
+    transform-origin: 0 0;
 }

@@ -1,4 +1,61 @@
+input,
+textarea {
+    -webkit-appearance: textfield;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input, button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
 .c-input,
 .c-textarea {
+    width: 100%;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: $font-family;
+    background-color: $c-white;
+    border: 1px solid $c-border-color;
+    box-sizing: border-box !important;
+    box-shadow: inset 0 3pz 8px rgba(0, 0, 0, 0.2);
+
+    &.error {
+        background: rgba(255, 0, 0, 0.1);
+        border-color: rgb(255, 0, 0);
+        border-color: rgba(255, 0, 0, 0.5);
+    }
     
+    &:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+
+    &:focus,
+    &:focus {
+        outline: none;
+    }
+
+    &::-ms-clear {
+        display: none;
+    }
 }
