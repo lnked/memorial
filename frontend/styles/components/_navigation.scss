@@ -30,25 +30,9 @@
         display: inline-block;
         vertical-align: top;
     }
-    
+
     &__item {
         float: left;
-        position: relative;
-
-        &:not(:last-child) {
-            &:after {
-                color: $c-shadow;
-                content: "|";
-                font-size: 1.3rem;
-                vertical-align: top;
-                display: inline-block;
-                position: absolute;
-                top: 0;
-                left: 100%;
-                margin-left: -3px;
-                bottom: 0;
-            }
-        }
     }
 
     &__link {
@@ -60,13 +44,62 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: color $a-time;
-
+        position: relative;
+        
+        &:after {
+            color: $c-shadow;
+            content: "|";
+            font-size: 1.3rem;
+            vertical-align: top;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -3px;
+            bottom: 0;
+        }
+        
         &:hover, &._current {
             color: $c-white;
         }
 
         &._current {
             background-color: $c-black;
+        }
+    }
+
+    &__submenu {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        display: none;
+    }
+    
+    &__item.is-active &__submenu {
+        display: block;
+    }
+
+    &__item.is-active &__link {
+        background-color: $c-black;
+        
+        &:before {
+            width: 67px;
+            height: 33px;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            z-index: 2000;
+            margin-top: -6px;
+            margin-left: -33px;
+            background: url(../images/corner.png) 50% 100% no-repeat;
+        }
+    }
+
+    &:last-child &__link {
+        &:after {
+            display: none;
         }
     }
 

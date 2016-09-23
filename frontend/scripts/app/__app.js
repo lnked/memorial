@@ -27,7 +27,22 @@ var app = app || {};
             });
         },
 
+        navigation: function() {
+            $('body').on('mouseenter', '.navigation__item', function(e){
+                var $this = $(this);
+                if ($this.find('.submenu').length && !$this.hasClass('is-active')) {
+                    $('.navigation__item.is-active').removeClass('is-active');
+                    $this.addClass('is-active');
+                }
+            });
+
+            $('body').on('mouseleave', '.navigation__item', function(e){
+                $('.navigation__item.is-active').removeClass('is-active');
+            });
+        },
+
         init: function() {
+            this.navigation();
             this.initPopup();
             this.warning();
             this.map.init();
