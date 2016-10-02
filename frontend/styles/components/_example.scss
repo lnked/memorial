@@ -56,12 +56,10 @@
                 vertical-align: middle;
             }
         }
-
-        &__link:hover &__circle {
-            background-color: #edca70;
-
-            &:before {
-                // border-color: #edca70;
+        
+        &:not(.no-hover) {
+            &__link:hover &__circle {
+                background-color: #edca70;
             }
         }
 

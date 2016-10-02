@@ -29,10 +29,15 @@ var app = app || {};
 
         navigation: function() {
             $('body').on('mouseenter', '.navigation__item', function(e){
-                var $this = $(this);
-                if ($this.find('.submenu').length && !$this.hasClass('is-active')) {
-                    $('.navigation__item.is-active').removeClass('is-active');
-                    $this.addClass('is-active');
+                if ($(window).width() > 782) {
+                    var $this = $(this);
+                    if ($this.find('.submenu').length && !$this.hasClass('is-active')) {
+                        $('.navigation__item.is-active').removeClass('is-active');
+                        $this.addClass('is-active');
+                    }
+                }
+                else {
+                    console.log("1");
                 }
             });
 
@@ -47,6 +52,8 @@ var app = app || {};
             this.warning();
             this.map.init();
             this.tabs.init();
+            this.slider.init();
+            this.sandwich.init();
             this.gallery.init();
         }
 

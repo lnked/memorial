@@ -16,18 +16,18 @@
     width: 48px;
     height: 48px;
     position: absolute;
-    left: 10px;
-    top: 112px;
+    right: 35px;
+    top: 24px;
     margin: 0;
     z-index: -1;
-    cursor: pointer;
     opacity: 0;
+    cursor: pointer;
     text-decoration: none;
 
     &__layer {
         width: 100%;
         max-width: 37px;
-        height: 4px;
+        height: 3px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -39,6 +39,10 @@
         -webkit-touch-callout: none;
         background-color: $c-sandwich-background;
         transition: background-color $a-time;
+
+        &, &:before, &:after {
+            border-radius: 1px;
+        }
 
         &:before,
         &:after {
@@ -97,8 +101,8 @@
     }
     
     .navigation {
-        &__list {
-            transform: scale(1, 1);
+        &__lock {
+            transform: translate3d(0, 0, 0);
         }
     }
 
@@ -121,7 +125,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 782px) {
     .sandwich {
         z-index: 10030;
         opacity: 1;

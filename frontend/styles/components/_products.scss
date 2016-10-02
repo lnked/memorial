@@ -1,7 +1,7 @@
 .products {
     font-size: 0;
     text-align: center;
-    margin: 0 0 25px;
+    margin: 0;
 
     &__item {
         padding: 6px;
@@ -66,6 +66,7 @@
             color: $c-golden-glow;
             font-size: 1.6rem;
             line-height: 1.4;
+            font-weight: 700;
             border-bottom: 1px solid #9c9080;
         }
     }

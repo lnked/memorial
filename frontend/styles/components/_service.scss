@@ -1,22 +1,24 @@
 .service {
     font-size: 0;
     text-align: center;
-    margin: 0 -22px 25px;
+    margin: 0 -22px 43px;
     
     &__header {
         color: #010101;
         font-size: 3rem;
         line-height: 1.4;
-        font-style: $font-italic;
+        font-weight: 700;
+        font-family: $font-italic;
         margin-bottom: 35px;
         padding-bottom: 35px;
+        letter-spacing: -0.01ex;
         text-align: center;
     }
 
     &__item {
         padding: 6px;
         max-width: 280px;
-        margin: 0 21px 35px;
+        margin: 0 21px 27px;
         text-align: center;
         display: inline-block;
         vertical-align: top;
@@ -37,7 +39,7 @@
             position: relative;
             line-height: 264px;
             border-radius: 50%;
-            margin: 0 auto 17px;
+            margin: 0 auto 11px;
             background-color: $c-hint-of-red;
             transition: background-color $a-time ease;
 
@@ -80,3 +82,23 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 782px) {
+    .service {
+        &__header {
+            font-size: 2.4rem;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
