@@ -35,3 +35,14 @@ body, input, textarea, select, button {
     direction: ltr;
     text-align: left;
 }
+
+@media only screen and (max-width: 782px) {
+    .layout-wrapper__container, .layout-footer__wrapper, .service-info__wrapper, .layout-header__wrapper, .breadcrumbs__wrapper, .info__wrapper, .reviews__item__wrapper, .slider__item__wrapper {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+}

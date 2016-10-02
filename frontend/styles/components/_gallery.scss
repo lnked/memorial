@@ -60,3 +60,23 @@
         &__caption {}
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 782px) {
+    .gallery {
+        text-align: center;
+
+        &__item {
+            width: 50%;
+            max-width: 320px;
+            margin: 0 8px 30px;
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

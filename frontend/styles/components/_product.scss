@@ -25,7 +25,7 @@
         margin-bottom: 15px;
 
         &__pusher {
-            conetnt: "";
+            content: "";
             position: relative;
             display: block;
             padding-top: 100%;
@@ -85,3 +85,21 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 782px) {
+    .product {
+        &__image {
+            &__pusher {
+                padding-top: 95%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

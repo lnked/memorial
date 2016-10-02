@@ -127,7 +127,11 @@
 
 @media only screen and (max-width: 782px) {
     .sandwich {
-        z-index: 10030;
+        z-index: 1030;
         opacity: 1;
+    }
+
+    .page-open .sandwich {
+        z-index: 10100;
     }
 }
