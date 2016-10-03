@@ -234,7 +234,41 @@
         }
     }
 }
-@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 568px) {
+    .product-item {
+        padding: 0;
+        margin: 0;
+
+        &__preview {
+            width: 100%;
+            margin-right: 0;
+            float: none;
+            margin-bottom: 20px;
+
+            &__item {
+                width: 98px;
+                height: 98px;
+                margin: 0 0 10px;
+
+                &:not(:last-child) {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        &__content {
+            clear: both;
+            float: none;
+            padding-left: 0;
+        }
+
+        &__description {
+            dt {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 480px) {}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}

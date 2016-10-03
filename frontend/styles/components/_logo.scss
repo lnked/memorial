@@ -120,7 +120,41 @@
         }
     }
 }
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 568px) {
+    .logo {
+        width: 260px;
+        line-height: 24px;
+
+        &__sign {
+            margin-left: -85px;
+        }
+
+        &__name {
+            width: 180px;
+            padding: 0;
+            line-height: 24px;
+
+            &__decoration {
+                padding: 0 30px;
+                
+                &:before, &:after {
+                    margin: 0;
+                }
+
+                &:before {
+                    top: 0;
+                }
+
+                &:after {
+                    top: auto;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+
+}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}

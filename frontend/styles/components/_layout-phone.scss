@@ -58,3 +58,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 782px) {
+    .layout-phone {
+        &__title {
+            font-size: 1.4rem;
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {
+    .layout-phone {
+        &__item {
+            &__link {
+                font-size: 2.6rem;
+                padding: 0 15px 0 60px;
+
+                &:before, &:after {
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

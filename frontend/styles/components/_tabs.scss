@@ -34,3 +34,27 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {
+    .tabs {
+        padding: 0;
+
+        &__item {
+            width: 50%;
+        }
+
+        &__link {
+            padding: 0;
+            min-width: 0;
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

@@ -13,8 +13,8 @@
 }
 
 .sandwich {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     right: 35px;
     top: 24px;
@@ -26,12 +26,12 @@
 
     &__layer {
         width: 100%;
-        max-width: 37px;
+        max-width: 30px;
         height: 3px;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-left: -18px;
+        margin-left: -15px;
         margin-top: 0;
         font-size: 0;
         display: block;
@@ -56,21 +56,21 @@
         }
 
         &:before {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
         }
 
         &:after {
-            transform: translateY(10px);
+            transform: translateY(8px);
         }
     }
 
     &:hover &__layer {
         &:before {
-            transform: translateY(-12px);
+            transform: translateY(-10px);
         }
 
         &:after {
-            transform: translateY(12px);
+            transform: translateY(10px);
         }
     }
 }
@@ -133,5 +133,20 @@
 
     .page-open .sandwich {
         z-index: 10100;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .sandwich {
+        top: 35px;
+        right: 8px;
+    }
+
+    .page-open .sandwich {
+        &__layer {
+            &:before, &:after {
+                background-color: #000 !important;
+            }
+        }
     }
 }

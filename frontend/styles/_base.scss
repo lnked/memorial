@@ -38,11 +38,18 @@ body, input, textarea, select, button {
 
 @media only screen and (max-width: 782px) {
     .layout-wrapper__container, .layout-footer__wrapper, .service-info__wrapper, .layout-header__wrapper, .breadcrumbs__wrapper, .info__wrapper, .reviews__item__wrapper, .slider__item__wrapper {
-        padding-left: 35px !important;
-        padding-right: 35px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 
     .no-mobile {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .layout-wrapper__container, .layout-footer__wrapper, .service-info__wrapper, .layout-header__wrapper, .breadcrumbs__wrapper, .info__wrapper, .reviews__item__wrapper, .slider__item__wrapper {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 }

@@ -99,6 +99,14 @@
     }
 }
 @media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .service {
+        &__item {
+            &:nth-child(n+5) {
+                display: none;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}

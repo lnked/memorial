@@ -63,3 +63,62 @@
         }
     }
 }
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 782px) {
+    .reviews {
+        &__item {
+            padding-left: 35px;
+            padding-right: 35px;
+
+            &__wrapper {
+                padding: 0 40px;
+
+                &:before, &:after {
+                    width: 20px;
+                    height: 18px;
+                }
+
+                &:before {
+                    top: 2px;
+                    background-image: url(../images/quote-rev-left-s.png);
+                }
+
+                &:after {
+                    bottom: 23px;
+                    background-image: url(../images/quote-rev-right-s.png);
+                }
+            }
+
+            &__description {
+                margin-bottom: 10px;
+
+                &, p {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__author {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px) {
+    .reviews {
+        &__item {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &__wrapper {
+                padding: 0 30px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

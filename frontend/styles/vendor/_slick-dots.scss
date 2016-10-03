@@ -140,3 +140,12 @@
         }
     }
 }
+
+@media only screen and (max-width: 568px) {
+    .slick-dots {
+        bottom: 13px;
+    }
+}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

@@ -158,7 +158,6 @@
 @media only screen and (max-width: 960px) {}
 @media only screen and (max-width: 782px) {
     .slider {
-
         &, &__wrapper, &__item, &__item:before, &__item__wrapper, &__item__image {
             height: 574px;
         }
@@ -190,7 +189,40 @@
         }
     }
 }
-@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 568px) {
+    .slider {
+        &, &__wrapper, &__item, &__item:before, &__item__wrapper, &__item__image {
+            height: 480px;
+        }
+
+        &__item {
+            &__title {
+                font-size: 2.4rem !important;
+            }
+
+            &__middle {
+                height: 160px;
+                line-height: 160px;
+            }
+        }
+
+        &__content {
+            bottom: 45px;
+            padding: 0 10px;
+
+            &__phone {
+                &__link {
+                    font-size: 2.6rem;
+                    padding: 0 15px 0 55px;
+
+                    &:before, &:after {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 480px) {}
 @media only screen and (max-width: 375px) {}
 @media only screen and (max-width: 320px) {}
