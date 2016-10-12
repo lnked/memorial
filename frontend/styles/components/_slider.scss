@@ -119,7 +119,13 @@
                 font-size: 1.6rem;
                 font-weight: 400;
                 line-height: 1.88;
+                outline: none;
+                text-decoration: underline;
                 text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -177,6 +183,12 @@
                 height: 270px;
                 line-height: 270px;
             }
+
+            &__more {
+                &__link {
+                    font-size: 1.4rem;
+                }
+            }
         }
 
         &__content {
@@ -203,6 +215,12 @@
             &__middle {
                 height: 160px;
                 line-height: 160px;
+            }
+
+            &__more {
+                &__link {
+                    font-size: 1.2rem;
+                }
             }
         }
 

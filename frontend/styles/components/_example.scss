@@ -30,8 +30,20 @@
             margin: 0 auto 17px;
             background-color: $c-hint-of-red;
             transition: background-color $a-time ease;
+            
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                background-color: #edca70;
+                transition: opacity $a-time;
+            }
 
-            &, &:before {
+            &, &:before, &:after {
                 border-radius: 50%;
             }
 
@@ -57,9 +69,13 @@
             }
         }
         
-        &:not(.no-hover) {
-            &__link:hover &__circle {
-                background-color: #edca70;
+        &__link:hover &__circle {
+            &:before {
+                border-color: #edca70;
+            }
+
+            &:after {
+                opacity: .7;
             }
         }
 

@@ -8,6 +8,8 @@
         display: inline-block;
         vertical-align: top;
         text-align: center;
+        position: relative;
+        z-index: 1;
 
         &._long {
             width: 25%;
@@ -78,7 +80,17 @@
 @media only screen and (max-width: 1280px) {}
 @media only screen and (max-width: 1140px) {}
 @media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 960px) {
+    .steps {
+        &__item {
+            &:not(:last-child) &__icon {
+                &:after {
+                    width: 102px;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 782px) {
     .steps {
         &__item {

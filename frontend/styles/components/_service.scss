@@ -66,6 +66,14 @@
             }
         }
 
+        &__title {
+            color: $c-black;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            border-bottom: 1px solid #dedede;
+            transition: border-color $a-time;
+        }
+
         &__link:hover &__circle {
             background-color: #edca70;
 
@@ -74,11 +82,8 @@
             }
         }
 
-        &__title {
-            color: $c-black;
-            font-size: 1.6rem;
-            line-height: 1.4;
-            border-bottom: 1px solid #dedede;
+        &__link:hover &__title {
+            border-color: #fff;
         }
     }
 }

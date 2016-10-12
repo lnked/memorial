@@ -188,14 +188,18 @@
         height: 40px;
         padding: 0 40px;
         display: inline-block;
-        background-color: $c-gamboge;
         color: $c-white;
         font-family: $font-italic;
         font-size: 1.8rem;
         font-weight: 700;
         line-height: 40px;
         text-decoration: none;
+        background-color: #5f2f00;
+        transition: background-color $a-time ease;
         
+        &:hover {
+            background-color: $c-gamboge;
+        }
     }
 }
 
@@ -217,6 +221,14 @@
 
                 &:not(:last-child) {
                     margin-right: 3px;
+                }
+            }
+
+            &__zoom {
+                &__image {
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
