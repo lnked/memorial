@@ -17,7 +17,7 @@
     height: 30px;
     position: absolute;
     right: 35px;
-    top: 24px;
+    top: 34px;
     margin: 0;
     z-index: -1;
     opacity: 0;
@@ -125,7 +125,7 @@
     }
 }
 
-@media only screen and (max-width: 782px) {
+@media only screen and (max-width: 1120px) {
     .sandwich {
         z-index: 1030;
         opacity: 1;
@@ -136,12 +136,7 @@
     }
 }
 
-@media only screen and (max-width: 568px) {
-    .sandwich {
-        top: 35px;
-        right: 8px;
-    }
-
+@media only screen and (max-width: 340px) {
     .page-open .sandwich {
         &__layer {
             &:before, &:after {

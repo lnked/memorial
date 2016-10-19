@@ -74,15 +74,22 @@
         }
     }
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 768px) {
     .layout-header {
         &._main {
-            height: 480px;
+            height: 574px;
         }
 
         &__logo {
             margin-top: -40px;
             margin-left: -132px;
+        }
+    }
+}
+@media only screen and (max-width: 568px) {
+    .layout-header {
+        &._main {
+            height: 480px;
         }
     }
 }

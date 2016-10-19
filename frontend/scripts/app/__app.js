@@ -7,9 +7,34 @@ var app = app || {};
         
         initPopup: function()
         {
-            $.popup.init('.j-open-popup', {
+            $.popup.init('.js-open-popup', {
                 cssPosition: false,
                 wrapper: '.layout-wrapper'
+            });
+
+            $('body').on('click', '.j-open-popup', function(e){
+                e.preventDefault();
+                var popup = '', $popup = null, header = '';
+
+                popup = $(this).attr('href');
+
+                if (popup) {
+                    popup = 'tmpl-' + popup.substr(1);
+                }
+
+                if ($(this).data('title')) {
+                    header = $(this).data('title');
+                }
+
+                $popup = $(template(popup, { 'header': header }));
+
+                $popup.addClass('temp');
+
+                $('body').append($popup);
+
+                $.popup.show($popup);
+
+                return false;
             });
         },
         
@@ -29,7 +54,7 @@ var app = app || {};
 
         navigation: function() {
             $('body').on('mouseenter', '.navigation__item', function(e){
-                if ($(window).width() > 782) {
+                if ($(window).width() > 1120) {
                     var $this = $(this);
                     if ($this.find('.submenu').length && !$this.hasClass('is-active')) {
                         $('.navigation__item.is-active').removeClass('is-active');

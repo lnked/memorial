@@ -52,7 +52,7 @@
 		
 		<div class="navigation__lock">
 			<div class="navigation__consult">
-				<a href="#popup-feedback" class="navigation__consult__button j-open-popup">Заказать консультацию</a>
+				<a href="#popup-feedback" class="navigation__consult__button j-open-popup" data-title="Заказать консультацию">Заказать консультацию</a>
 			</div>
 
 			<ul class="navigation__list">
@@ -217,9 +217,11 @@
             <section class="popup__content">
                 <b class="popup__close js-popup-close"></b>
                 
+                {{#header}}
                 <header class="popup__header">
-                    <h4 class="popup__header__title">Заказать услуги</h4>
+                    <h4 class="popup__header__title">{{header}}</h4>
                 </header>
+                {{/header}}
 
                 <article class="popup__body">
 
@@ -310,7 +312,9 @@
                                         <img src="../images/example/burial-econom.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
 
-                                    <span class="price__item__caption">Похороны класса «Эконом»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Похороны класса «Эконом»</span>
+                                    </span>
                                 </a>
                                 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -331,7 +335,9 @@
                                         <img src="../images/example/burial-standart.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
 
-                                    <span class="price__item__caption">Похороны класса «Стандарт»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Похороны класса «Стандарт»</span>
+                                    </span>
                                 </a>
                                 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -352,7 +358,9 @@
                                         <img src="../images/example/burial-elit.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
 
-                                    <span class="price__item__caption">Похороны класса «Элит»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Похороны класса «Элит»</span>
+                                    </span>
                                 </a>
                                 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -375,7 +383,9 @@
                                         <img src="../images/example/1.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
 
-                                    <span class="price__item__caption">Кремация класса «Эконом»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Кремация класса «Эконом»</span>
+                                    </span>
                                 </a>
                                 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -396,7 +406,9 @@
                                         <img src="../images/example/2.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
 
-                                    <span class="price__item__caption">Кремация класса «Стандарт»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Кремация класса «Стандарт»</span>
+                                    </span>
                                 </a>
 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -417,7 +429,9 @@
                                         <img src="../images/example/3.jpg" width="340" height="250" class="price__item__image__src" itemprop="thumbnail" alt="">
                                     </span>
                                     
-                                    <span class="price__item__caption">Кремация класса «Элит»</span>
+                                    <span class="price__item__caption">
+                                        <span class="price__item__caption__text">Кремация класса «Элит»</span>
+                                    </span>
                                 </a>
 
                                 <div class="price__item__offers" itemprop="offers" itemscope itemtype="http://schema.org/Offer">

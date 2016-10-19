@@ -15,8 +15,8 @@
         &__block {
             width: 320px;
             padding: 20px;
-            background-color: $c-white;
             border: 1px solid #e2e2e2;
+            background-color: $c-white;
         }
 
         &__link {
@@ -38,6 +38,7 @@
         }
 
         &__image {
+            width: 100%;
             position: absolute;
             left: 0;
             top: 0;
@@ -66,13 +67,35 @@
             font-weight: 400;
             text-align: center;
             position: absolute;
-            bottom: 0;
+            bottom: 6px;
             left: 0;
             right: 0;
-            height: 50px;
-            line-height: 50px;
+            padding: 5px 10px;
+            min-height: 50px;
+            line-height: 40px;
+            overflow: hidden;
             border-radius: 0 0 10px 10px;
-            background-color: #ecc452;
+
+            &:before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                opacity: .9;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                z-index: 0;
+                background-color: #ecc452;
+            }
+
+            &__text {
+                position: relative;
+                z-index: 1;
+                line-height: 1.2;
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
 
         &__offers {
@@ -110,8 +133,32 @@
 @media only screen and (max-width: 1280px) {}
 @media only screen and (max-width: 1140px) {}
 @media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 960px) {
+    .price {
+        &__item {
+            &__block {
+                width: 260px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .price {
+        text-align: center;
+
+        &__item {
+            clear: both;
+            width: 100%;
+            display: block;
+            max-width: 320px;
+            margin: 0 auto 30px;
+
+            &__block {
+                width: 260px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 568px) {
     .price {
         margin: 0;

@@ -52,7 +52,7 @@
 		
 		<div class="navigation__lock">
 			<div class="navigation__consult">
-				<a href="#popup-feedback" class="navigation__consult__button j-open-popup">Заказать консультацию</a>
+				<a href="#popup-feedback" class="navigation__consult__button j-open-popup" data-title="Заказать консультацию">Заказать консультацию</a>
 			</div>
 
 			<ul class="navigation__list">
@@ -323,9 +323,11 @@
             <section class="popup__content">
                 <b class="popup__close js-popup-close"></b>
                 
+                {{#header}}
                 <header class="popup__header">
-                    <h4 class="popup__header__title">Заказать услуги</h4>
+                    <h4 class="popup__header__title">{{header}}</h4>
                 </header>
+                {{/header}}
 
                 <article class="popup__body">
 
