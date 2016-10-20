@@ -61,8 +61,31 @@ var app = app || {};
                         $this.addClass('is-active');
                     }
                 }
-                else {
-                    console.log("1");
+            });
+
+            $('body').on('click', '.navigation__link', function(e){
+                if ($(window).width() <= 1120) {
+                    var $item = $(this).closest('.navigation__item');
+
+                    if ($item.find('.submenu').length) {
+                        e.preventDefault();
+
+                        if (!$item.find('.submenu').find('.submenu__backuri').length) {
+                            $item.find('.submenu').append('<div class="submenu__backuri">Назад</div>');
+                        }
+
+                        $item.find('.submenu').find('.submenu__backuri').on('click', function(){
+                            e.preventDefault();
+                            
+                            $(this).closest('.is-open').removeClass("is-open");
+
+                            return false;
+                        });
+
+                        $item.addClass("is-open");
+
+                        return false;
+                    }
                 }
             });
 

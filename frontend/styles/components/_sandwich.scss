@@ -136,6 +136,18 @@
     }
 }
 
+@media only screen and (max-width: 385px) {
+    .sandwich {
+        right: 15px;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .sandwich {
+        right: 10px;
+    }
+}
+
 @media only screen and (max-width: 340px) {
     .page-open .sandwich {
         &__layer {

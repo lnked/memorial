@@ -10,6 +10,22 @@
     background-image: url(../images/separator.png);
     background-position: 50% 95%;
     background-repeat: no-repeat;
+    
+    &__backuri {
+        height: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: #000;
+        cursor: pointer;
+        padding: 0 30px;
+        font-size: 1.4rem;
+        line-height: 40px;
+        text-align: left;
+        border-bottom: 1px solid #b8b0ab;
+        background: url(../images/previevs.png) 9px 50% no-repeat;
+    }
 
     &__column {
         width: 25%;
@@ -58,7 +74,23 @@
     }
 }
 
+@media only screen and (max-width: 1120px) {
+    .submenu {
+        padding: 60px 15px 80px;
 
+        &__column {
+            width: 100%;
+            clear: both;
+            padding: 0;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5) {
     .submenu {

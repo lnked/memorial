@@ -92,6 +92,15 @@
         display: none;
     }
     
+    &__item.is-open &__submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    
     &__item.is-active &__submenu {
         display: block;
     }
@@ -155,6 +164,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 1120px) {
     .navigation {
         width: 100%;
@@ -219,7 +229,7 @@
             width: 100%;
             float: none;
             border-bottom: 1px solid #bfb8b3;
-            
+
             &._dropdown {
                 position: relative;
 
@@ -233,6 +243,10 @@
                     content: "";
                     background: url(../images/arrow-r.png) 50% 50% no-repeat;
                 }
+            }
+            
+            &.is-open {
+                position: static;
             }
         }
 
