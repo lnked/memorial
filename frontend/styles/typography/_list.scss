@@ -48,7 +48,14 @@ ul {
 @media only screen and (max-width: 1140px) {}
 @media only screen and (max-width: 1024px) {}
 @media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    ul:not([class]), ol:not([class]), &.triangle {
+
+        &, li {
+            text-align: left;
+        }
+    }
+}
 @media only screen and (max-width: 568px) {
     ul:not([class]), ol:not([class]) {
         margin-left: 10px;

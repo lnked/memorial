@@ -7,6 +7,8 @@ var app = app || {};
         
         initPopup: function()
         {
+            var $overlay = $('#overlay');
+
             $.popup.init('.js-open-popup', {
                 cssPosition: false,
                 wrapper: '.layout-wrapper'
@@ -32,7 +34,12 @@ var app = app || {};
 
                 $('body').append($popup);
 
-                $.popup.show($popup);
+                $overlay.addClass('visible');
+
+                setTimeout(function(){
+                    $overlay.addClass('animate');
+                    $.popup.show($popup);
+                }, 10);
 
                 return false;
             });

@@ -144,6 +144,7 @@
 }
 @media only screen and (max-width: 768px) {
     .price {
+        padding: 0 25px;
         text-align: center;
 
         &__item {
@@ -154,7 +155,7 @@
             margin: 0 auto 30px;
 
             &__block {
-                width: 260px;
+                width: 100%;
             }
         }
     }
