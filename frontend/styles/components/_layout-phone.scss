@@ -65,6 +65,8 @@
 @media only screen and (max-width: 960px) {}
 @media only screen and (max-width: 782px) {
     .layout-phone {
+        padding: 0 5px;
+
         &__title {
             font-size: 1.4rem;
         }
@@ -75,8 +77,8 @@
     .layout-phone {
         &__item {
             &__link {
-                font-size: 2.6rem;
-                padding: 0 15px 0 60px;
+                font-size: 2.4rem;
+                padding: 0 15px 0 50px;
 
                 &:before, &:after {
                     left: 15px;

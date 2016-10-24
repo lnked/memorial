@@ -144,7 +144,7 @@
 }
 @media only screen and (max-width: 768px) {
     .price {
-        padding: 0 25px;
+        padding: 0 5px;
         text-align: center;
 
         &__item {
@@ -157,6 +157,12 @@
             &__block {
                 width: 100%;
             }
+        }
+    }
+
+    .layout-wrapper__container {
+        p {
+            padding: 0 10px;
         }
     }
 }
