@@ -31,6 +31,8 @@ var app = app || {};
                 $popup = $(template(popup, { 'header': header }));
 
                 $popup.addClass('temp');
+                
+                $popup.find('input[name="title_form"]').val(header);
 
                 $('body').append($popup);
 
