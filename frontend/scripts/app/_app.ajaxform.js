@@ -61,9 +61,17 @@ var app = app || {};
                     error_message = response.error_message;
                 }
 
-                _this.validation(form, errors, response.error_message);
+                _this.validation(form, errors, error_message);
             }
 			
+            if (response.hasOwnProperty('run_script'))
+            {
+                if (typeof(window[response.run_script]) == 'function')
+                {
+                    window[response.run_script]();
+                }
+            }
+
             if (response.hasOwnProperty('open_popup'))
             {
             	if ($('body').find('.popup.is-open').length)
@@ -90,7 +98,6 @@ var app = app || {};
             _this = this;
 
             form.find('.' + _this.config.error_class).removeClass(_this.config.error_class);
-            form.find('.' + _this.config.error_message).remove();
             form.find('.' + _this.config.error_message_class).removeClass(_this.config.error_message_addclass);
             
             var fieldName, field;
@@ -190,7 +197,7 @@ var app = app || {};
 					dataType: 'JSON'
 				});
 
-			} catch(e){}
+			} catch(e) {}
 
 		},
 
