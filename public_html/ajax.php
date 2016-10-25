@@ -15,6 +15,9 @@ $response = array( "status" => false, "errors" => array(
     "phone" => "Неизвестная ошибка на сервере"
 ) );
 
+// Форма с ответом
+$response = array( "status" => true, "title" => "Спасибо", "message" => "Заказ отправлен" );
+
 exit( json_encode( $response, 64 | 256 ) );
 
 // 

@@ -86,9 +86,16 @@ var app = app || {};
             	}
             }
 
-			if (response.hasOwnProperty('message'))
+            if (response.hasOwnProperty('message'))
 			{
-				$.popup.message(response.title, response.message);
+                var title = '';
+
+                if (response.hasOwnProperty('title')) {
+    				title = response.title;
+                }
+
+                $.popup.close();
+                $.popup.message(title, response.message);
 			}
 
 		},

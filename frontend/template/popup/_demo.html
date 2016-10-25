@@ -1,5 +1,29 @@
 <div class="overlay" id="overlay"></div>
 
+<script type="text/html" id="tmpl-popup-message">
+    <div class="popup" id="popup-message">
+        <div class="popup__dialog">
+            <section class="popup__content">
+                <b class="popup__close js-popup-close"></b>
+                
+                {{#title}}
+                <header class="popup__header">
+                    <h4 class="popup__header__title">{{title}}</h4>
+                </header>
+                {{/title}}
+
+                <article class="popup__body">
+                
+                    {{#text}}
+                        <div class="popup__body__message">{{text}}</div>
+                    {{/text}}
+
+                </article>
+            </section>
+        </div>
+    </div>
+</script>
+
 <script type="text/html" id="tmpl-popup-feedback">
     <div class="popup" id="popup-feedback">
         <div class="popup__dialog">

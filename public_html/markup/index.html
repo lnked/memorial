@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- (c) lnk. celebro | http://www.celebro.ru/ -->
 <html lang="ru" class="no-js" itemscope="itemscope" xmlns="http://www.w3.org/1999/xhtml" itemtype="http://schema.org/WebPage">
-<head> 
+
+<head>
     <link rel="stylesheet" href="../css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic-ext" rel="stylesheet">
-    
+
     <meta charset="UTF-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
@@ -15,7 +16,7 @@
     <meta content="email=no" name="format-detection">
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
-    
+
     <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
@@ -23,654 +24,813 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
-    <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+    <script>
+        (function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);
+    </script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <title itemprop="name">Index</title>
 </head>
+
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <defs><!-- inject:svg --><!-- endinject --></defs>
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <!-- inject:svg -->
+            <!-- endinject -->
+        </defs>
+    </svg>
 
-<div class="layout-wrapper">
+    <div class="layout-wrapper">
 
-    <span class="sandwich js-sandwich-menu">
-	<span class="sandwich__layer">Menu</span>
-</span>
+        <span class="sandwich js-sandwich-menu">
+            <span class="sandwich__layer">Menu</span>
+        </span>
 
-<div class="menu-overlay" id="menu-overlay"></div>
+        <div class="menu-overlay" id="menu-overlay"></div>
 
-<nav class="navigation" id="navigation">
-	<div class="navigation__wrapper">
-		
-		<div class="navigation__lock">
-			<div class="navigation__consult">
-				<a href="#popup-feedback" class="navigation__consult__button j-open-popup" data-title="Заказать консультацию">Заказать консультацию</a>
-			</div>
+        <nav class="navigation" id="navigation">
+            <div class="navigation__wrapper">
 
-			<ul class="navigation__list">
-			    
-			    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/about.html" itemprop="url" class="navigation__link">
-			    		<span class="navigation__link__name" itemprop="name">О нас</span>
-			    	</a>
-		    	</li>
+                <div class="navigation__lock">
+                    <div class="navigation__consult">
+                        <a href="#popup-feedback" class="navigation__consult__button j-open-popup" data-title="Заказать консультацию">Заказать консультацию</a>
+                    </div>
 
-			    <li class="navigation__item _dropdown" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/service.html" itemprop="url" class="navigation__link">
-			    		<span class="navigation__link__name" itemprop="name">Ритуальные услуги</span>
-			    	</a>
+                    <ul class="navigation__list">
 
-					<div class="navigation__submenu submenu clearfix">
-						<div class="submenu__column">
-							<div class="submenu__header">ОСНОВНЫЕ УСЛУГИ</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Похороны (Цены на захоронение)</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Изготовление надписей</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Изготовление памятников</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Изделия из металла</a></li>
-							</ul>
-						</div>
+                        <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/about.html" itemprop="url" class="navigation__link">
+                                <span class="navigation__link__name" itemprop="name">О нас</span>
+                            </a>
+                        </li>
 
-						<div class="submenu__column">
-							<div class="submenu__header">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Отправка - приемка «Груз 200»</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Кремация</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Музыкальное сопровождение</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Демонтажные и монтажные работы</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Вынос гроба с телом умершего</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Уход за могилой</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Предоставление траурного зала</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Шатер с тумбой под гроб, стол, стулья</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Биотуалет и рукомойник</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Убранство могилы</a></li>
-							</ul>
-						</div>
+                        <li class="navigation__item _dropdown" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/service.html" itemprop="url" class="navigation__link">
+                                <span class="navigation__link__name" itemprop="name">Ритуальные услуги</span>
+                            </a>
 
-						<div class="submenu__column">
-							<div class="submenu__header">&nbsp;</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Поминальная трапеза в кафе</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">ВИП грузчики на похоронах, одетые в костюмы</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Cингуматор (ритуальный лифт)</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Предоставление элитного катафального транспорта</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Изготовление траурных лент на венок</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Реставрация памятников, оград</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Оформление кремации</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Помощь в выборе места захоронения</a></li>
-							</ul>
-						</div>
+                            <div class="navigation__submenu submenu clearfix">
+                                <div class="submenu__column">
+                                    <div class="submenu__header">ОСНОВНЫЕ УСЛУГИ</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Похороны (Цены на захоронение)</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Изготовление надписей</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Изготовление памятников</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Изделия из металла</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-						<div class="submenu__column">
-							<div class="submenu__header">&nbsp;</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Услуга организатора похорон</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Помощь в оформлении всех необходимых документов</a></li>
-							</ul>
-						</div>
-					</div>
-		    	</li>
-		
-			    <li class="navigation__item _dropdown" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/catalog.html" itemprop="url" class="navigation__link _simple">
-			    		<span class="navigation__link__name" itemprop="name">Ритуальные товары</span>
-			    	</a>
-		
-					<div class="navigation__submenu submenu clearfix">
-						<div class="submenu__column">
-							<div class="submenu__header">ГРОБЫ</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Обитые тканью</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Полированные</a></li>
-							</ul>
-							<div class="submenu__header">ВЕНКИ</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Из натуральных цветов</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Из искусственных цветов</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">На заказ</a></li>
-							</ul>
-						</div>
-						<div class="submenu__column">
-							<div class="submenu__header">РИТУАЛЬНЫЕ ПРИНАДЛЕЖНОСТИ</div>
-							<ul class="submenu__nav">
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Кресты</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Лампады</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Обувь</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Одежда</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Подушки</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Покрывала</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Платки носовые</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Набор погребальный</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Покрывало с наволочкой</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Рамки для фотографий</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Свечи</a></li>
-								<li class="submenu__nav__item"><a href="" class="submenu__nav__link">Прочее</a></li>
-							</ul>
-						</div>
-					</div>
+                                <div class="submenu__column">
+                                    <div class="submenu__header">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Отправка - приемка «Груз 200»</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Кремация</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Музыкальное сопровождение</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Демонтажные и монтажные работы</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Вынос гроба с телом умершего</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Уход за могилой</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Предоставление траурного зала</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Шатер с тумбой под гроб, стол, стулья</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Биотуалет и рукомойник</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Убранство могилы</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-		    	</li>
-		
-			    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/articles.html" itemprop="url" class="navigation__link">
-			    		<span class="navigation__link__name" itemprop="name">Статьи</span>
-			    	</a>
-		    	</li>
-		
-			    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/reviews.html" itemprop="url" class="navigation__link">
-			    		<span class="navigation__link__name" itemprop="name">Отзывы</span>
-			    	</a>
-		    	</li>
+                                <div class="submenu__column">
+                                    <div class="submenu__header">&nbsp;</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Поминальная трапеза в кафе</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">ВИП грузчики на похоронах, одетые в костюмы</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Cингуматор (ритуальный лифт)</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Предоставление элитного катафального транспорта</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Изготовление траурных лент на венок</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Реставрация памятников, оград</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Оформление кремации</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Помощь в выборе места захоронения</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-			    <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
-			    	<a href="../markup/contacts.html" itemprop="url" class="navigation__link">
-			    		<span class="navigation__link__name" itemprop="name">Контакты</span>
-			    	</a>
-		    	</li>
+                                <div class="submenu__column">
+                                    <div class="submenu__header">&nbsp;</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Услуга организатора похорон</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Помощь в оформлении всех необходимых документов</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
 
-			</ul>
-		</div>
-	</div>
-</nav>
+                        <li class="navigation__item _dropdown" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/catalog.html" itemprop="url" class="navigation__link _simple">
+                                <span class="navigation__link__name" itemprop="name">Ритуальные товары</span>
+                            </a>
 
-<header class="layout-header _main" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-	<div class="layout-header__wrapper">
-		
-		<a href="../markup/index.html" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
-			<span class="logo__sign">
-				<img src="../images/logo.png" class="logo__sign__src" alt="">
-			</span>
+                            <div class="navigation__submenu submenu clearfix">
+                                <div class="submenu__column">
+                                    <div class="submenu__header">ГРОБЫ</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Обитые тканью</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Полированные</a>
+                                        </li>
+                                    </ul>
+                                    <div class="submenu__header">ВЕНКИ</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Из натуральных цветов</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Из искусственных цветов</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">На заказ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu__column">
+                                    <div class="submenu__header">РИТУАЛЬНЫЕ ПРИНАДЛЕЖНОСТИ</div>
+                                    <ul class="submenu__nav">
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Кресты</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Лампады</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Обувь</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Одежда</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Подушки</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Покрывала</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Платки носовые</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Набор погребальный</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Покрывало с наволочкой</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Рамки для фотографий</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Свечи</a>
+                                        </li>
+                                        <li class="submenu__nav__item">
+                                            <a href="" class="submenu__nav__link">Прочее</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-			<span class="logo__name" itemprop="name">
-				<span class="logo__name__decoration">РитуальноЕ агентство «МЕМОРИАЛ»</span>
-			</span>
-		</a>
+                        </li>
 
-	</div>
-	
-	
-	<div class="slider">
+                        <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/articles.html" itemprop="url" class="navigation__link">
+                                <span class="navigation__link__name" itemprop="name">Статьи</span>
+                            </a>
+                        </li>
 
-		<div class="slider__content">
-			<div class="slider__content__text">
-				Мы знаем на сколько тяжело заниматься организацией похорон в минуты скорби.<br>Обращаясь к нам - Вы можете быть уверены, что близкий человек будет достойно сопровожден в лучший мир.
-			</div>
+                        <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/reviews.html" itemprop="url" class="navigation__link">
+                                <span class="navigation__link__name" itemprop="name">Отзывы</span>
+                            </a>
+                        </li>
 
-			<div class="slider__content__phone">
-	            <a href="" class="slider__content__phone__link">+ 7 861 222 25 61</a>
-	        </div>
-		</div>
+                        <li class="navigation__item" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                            <a href="../markup/contacts.html" itemprop="url" class="navigation__link">
+                                <span class="navigation__link__name" itemprop="name">Контакты</span>
+                            </a>
+                        </li>
 
-		<div class="slider__wrapper j-slider j-slider-calc j-disable-navigation">
-			
-			<div class="slider__item slick-slide">
-				<div class="slider__item__wrapper">
-					<div class="slider__item__inner">
-						
-						<div class="slider__item__middle">
-							<div class="slider__item__middle__text">
-								<div class="slider__item__title">
-									Что делать в случае смерти человека?
-								</div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-								<div class="slider__item__more">
-									<a href="" class="slider__item__more__link">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+        <header class="layout-header _main" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+            <div class="layout-header__wrapper">
 
-				<div class="slider__item__image" style="background-image: url(../images/slider/1.jpg);"></div>
-			</div>
-			
-			<div class="slider__item slick-slide">
-				<div class="slider__item__wrapper">
-					<div class="slider__item__inner">
-						
-						<div class="slider__item__middle">
-							<div class="slider__item__middle__text">
-								<div class="slider__item__title">
-									Что делать?
-								</div>
+                <a href="../markup/index.html" class="layout-header__logo logo" rel="home" itemprop="url" accesskey="1" data-instant>
+                    <span class="logo__sign">
+                        <img src="../images/logo.png" class="logo__sign__src" alt="">
+                    </span>
 
-								<div class="slider__item__more">
-									<a href="" class="slider__item__more__link">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+                    <span class="logo__name" itemprop="name">
+                        <span class="logo__name__decoration">РитуальноЕ агентство «МЕМОРИАЛ»</span>
+                    </span>
+                </a>
 
-				<div class="slider__item__image" style="background-image: url(../images/slider/2.jpg);"></div>
-			</div>
+            </div>
 
-			<div class="slider__item slick-slide">
-				<div class="slider__item__wrapper">
-					<div class="slider__item__inner">
-						
-						<div class="slider__item__middle">
-							<div class="slider__item__middle__text">
-								<div class="slider__item__title">
-									Что в случае смерти человека?
-								</div>
+            <div class="slider">
 
-								<div class="slider__item__more">
-									<a href="" class="slider__item__more__link">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+                <div class="slider__content">
+                    <div class="slider__content__text">
+                        Мы знаем на сколько тяжело заниматься организацией похорон в минуты скорби.
+                        <br>Обращаясь к нам - Вы можете быть уверены, что близкий человек будет достойно сопровожден в лучший мир.
+                    </div>
 
-				<div class="slider__item__image" style="background-image: url(../images/slider/3.jpg);"></div>
-			</div>
+                    <div class="slider__content__phone">
+                        <a href="" class="slider__content__phone__link">+ 7 861 222 25 61</a>
+                    </div>
+                </div>
 
-			<div class="slider__item slick-slide">
-				<div class="slider__item__wrapper">
-					<div class="slider__item__inner">
-						
-						<div class="slider__item__middle">
-							<div class="slider__item__middle__text">
-								<div class="slider__item__title">
-									Что делать человека?
-								</div>
+                <div class="slider__wrapper j-slider j-slider-calc j-disable-navigation">
 
-								<div class="slider__item__more">
-									<a href="" class="slider__item__more__link">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+                    <div class="slider__item slick-slide">
+                        <div class="slider__item__wrapper">
+                            <div class="slider__item__inner">
 
-				<div class="slider__item__image" style="background-image: url(../images/slider/4.jpg);"></div>
-			</div>
+                                <div class="slider__item__middle">
+                                    <div class="slider__item__middle__text">
+                                        <div class="slider__item__title">
+                                            Что делать в случае смерти человека?
+                                        </div>
 
-		</div>
+                                        <div class="slider__item__more">
+                                            <a href="" class="slider__item__more__link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-	</div>
-	
-</header>
-
-<div class="warning-block j-warning-block">
-	<div class="warning-block__icon j-warning-trigger"></div>
-	<div class="warning-block__background">
-		<div class="warning-block__content">
-			Не доверяйте агенту, который позвонил Вам!<br>Информация о смерти была продана недобросовестными сотрудниками полиции или морга.
-		</div>
-	</div>
-</div>
-
-<div class="overlay" id="overlay"></div>
-
-<script type="text/html" id="tmpl-popup-feedback">
-    <div class="popup" id="popup-feedback">
-        <div class="popup__dialog">
-            <section class="popup__content">
-                <b class="popup__close js-popup-close"></b>
-                
-                {{#header}}
-                <header class="popup__header">
-                    <h4 class="popup__header__title">{{header}}</h4>
-                </header>
-                {{/header}}
-
-                <article class="popup__body">
-
-                    <form action="/ajax.php" method="POST" class="form form-ajax form-reset">
-                        <input name="title_form" type="hidden" value="">
-
-                        <div class="f-label">
-                            <input name="name" placeholder="Имя*" class="c-input">
+                            </div>
                         </div>
 
-                        <div class="f-label">
-                            <input name="email" placeholder="E-mail" class="c-input">
+                        <div class="slider__item__image" style="background-image: url(../images/slider/1.jpg);"></div>
+                    </div>
+
+                    <div class="slider__item slick-slide">
+                        <div class="slider__item__wrapper">
+                            <div class="slider__item__inner">
+
+                                <div class="slider__item__middle">
+                                    <div class="slider__item__middle__text">
+                                        <div class="slider__item__title">
+                                            Что делать?
+                                        </div>
+
+                                        <div class="slider__item__more">
+                                            <a href="" class="slider__item__more__link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
-                        <div class="f-label">
-                            <input name="phone" placeholder="Телефон*" class="c-input">
+                        <div class="slider__item__image" style="background-image: url(../images/slider/2.jpg);"></div>
+                    </div>
+
+                    <div class="slider__item slick-slide">
+                        <div class="slider__item__wrapper">
+                            <div class="slider__item__inner">
+
+                                <div class="slider__item__middle">
+                                    <div class="slider__item__middle__text">
+                                        <div class="slider__item__title">
+                                            Что в случае смерти человека?
+                                        </div>
+
+                                        <div class="slider__item__more">
+                                            <a href="" class="slider__item__more__link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
-                        <div class="f-label">
-                            <input name="product" placeholder="Товар" class="c-input">
+                        <div class="slider__item__image" style="background-image: url(../images/slider/3.jpg);"></div>
+                    </div>
+
+                    <div class="slider__item slick-slide">
+                        <div class="slider__item__wrapper">
+                            <div class="slider__item__inner">
+
+                                <div class="slider__item__middle">
+                                    <div class="slider__item__middle__text">
+                                        <div class="slider__item__title">
+                                            Что делать человека?
+                                        </div>
+
+                                        <div class="slider__item__more">
+                                            <a href="" class="slider__item__more__link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
-                        <div class="f-label">
-                            <textarea name="message" placeholder="Сообщение" cols="30" rows="10" class="c-textarea"></textarea>
-                        </div>
+                        <div class="slider__item__image" style="background-image: url(../images/slider/4.jpg);"></div>
+                    </div>
 
-                        <div class="captcha">
-                            <div class="g-recaptcha" data-sitekey="6LeIcAcUAAAAAARmd4UUIkkUChZsgUiK2rsDJZ26"></div>
-                        </div>
+                </div>
 
-                        <div class="f-error-text form__error-message j-error-message"></div>
+            </div>
+
+        </header>
+
+        <div class="warning-block j-warning-block">
+            <div class="warning-block__icon j-warning-trigger"></div>
+            <div class="warning-block__background">
+                <div class="warning-block__content">
+                    Не доверяйте агенту, который позвонил Вам!
+                    <br>Информация о смерти была продана недобросовестными сотрудниками полиции или морга.
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <script type="text/html" id="tmpl-popup-message">
+            <div class="popup" id="popup-message">
+                <div class="popup__dialog">
+                    <section class="popup__content">
+                        <b class="popup__close js-popup-close"></b>
                         
-                        <div class="f-button">
-                            <button type="submit" class="button">Отправить</button>
+                        {{#title}}
+                        <header class="popup__header">
+                            <h4 class="popup__header__title">{{title}}</h4>
+                        </header>
+                        {{/title}}
+        
+                        <article class="popup__body">
+                        
+                            {{#text}}
+                                <div class="popup__body__message">{{text}}</div>
+                            {{/text}}
+        
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/html" id="tmpl-popup-feedback">
+            <div class="popup" id="popup-feedback">
+                <div class="popup__dialog">
+                    <section class="popup__content">
+                        <b class="popup__close js-popup-close"></b>
+                        
+                        {{#header}}
+                        <header class="popup__header">
+                            <h4 class="popup__header__title">{{header}}</h4>
+                        </header>
+                        {{/header}}
+        
+                        <article class="popup__body">
+        
+                            <form action="/ajax.php" method="POST" class="form form-ajax form-reset">
+                                <input name="title_form" type="hidden" value="">
+        
+                                <div class="f-label">
+                                    <input name="name" placeholder="Имя*" class="c-input">
+                                </div>
+        
+                                <div class="f-label">
+                                    <input name="email" placeholder="E-mail" class="c-input">
+                                </div>
+        
+                                <div class="f-label">
+                                    <input name="phone" placeholder="Телефон*" class="c-input">
+                                </div>
+        
+                                <div class="f-label">
+                                    <input name="product" placeholder="Товар" class="c-input">
+                                </div>
+        
+                                <div class="f-label">
+                                    <textarea name="message" placeholder="Сообщение" cols="30" rows="10" class="c-textarea"></textarea>
+                                </div>
+        
+                                <div class="captcha">
+                                    <div class="g-recaptcha" data-sitekey="6LeIcAcUAAAAAARmd4UUIkkUChZsgUiK2rsDJZ26"></div>
+                                </div>
+        
+                                <div class="f-error-text form__error-message j-error-message"></div>
+                                
+                                <div class="f-button">
+                                    <button type="submit" class="button">Отправить</button>
+                                </div>
+                            </form>
+        
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </script>
+
+        <div class="layout-wrapper__pusher">
+
+            <div class="layout-wrapper__container clearfix">
+
+                <blockquote class="decoration">
+                    Ритуальное агентство "Мемориал" предоставляет ритуальные услуги в городе Краснодаре. Мы знаем на сколько тяжело заниматься организацией похорон в минуты скорби. Поэтому готовы взять на себя всю организацию похорон от оформления документов до захоронения.
+                    Обращаясь к нам - Вы можете быть уверены, что близкий человек будет достойно сопровожден в лучший мир. Вопрос денег с нами никогда не стоит остро.
+                </blockquote>
+
+                <div class="ti">
+                    ООО «Мемориал» зарегистрировано 04.06.2007 г. Основной вид деятельности –
+                    <br>организация похорон и оказание связанных с ними услуг.
+                </div>
+
+                <ul class="set">
+                    <li class="set__item">
+                        <div class="set__item__icon">
+                            <img src="../images/star-ico.png" class="set__item__icon__src" alt="">
                         </div>
-                    </form>
-
-                </article>
-            </section>
-        </div>
-    </div>
-</script>
-
-    <div class="layout-wrapper__pusher">
-
-        <div class="layout-wrapper__container clearfix">
-
-            <blockquote class="decoration">
-                Ритуальное агентство "Мемориал" предоставляет ритуальные услуги в городе Краснодаре. 
-                Мы знаем на сколько тяжело заниматься организацией похорон в минуты скорби. Поэтому готовы взять на себя всю организацию похорон от оформления документов до захоронения. 
-                Обращаясь к нам - Вы можете быть уверены, что близкий человек будет достойно сопровожден в лучший мир. Вопрос денег с нами никогда не стоит остро.
-            </blockquote>
-            
-            <div class="ti">
-                ООО «Мемориал» зарегистрировано 04.06.2007 г. Основной вид деятельности – <br>организация похорон и оказание связанных с ними услуг.
-            </div>
-
-            <ul class="set">
-                <li class="set__item">
-                    <div class="set__item__icon">
-                        <img src="../images/star-ico.png" class="set__item__icon__src" alt="">
-                    </div>
-                    <div class="set__item__title">Высокие стандарты обслуживания</div>
-                    <div class="set__item__description">клиенты, приходящие к нам, рекомендуют нас своим знакомым</div>
-                </li>
-                <li class="set__item">
-                    <div class="set__item__icon">
-                        <img src="../images/people-ico.png" class="set__item__icon__src" alt="">
-                    </div>
-                    <div class="set__item__title">Профессиональный коллектив</div>
-                    <div class="set__item__description">средний стаж работников 8 лет</div>
-                </li>
-                <li class="set__item">
-                    <div class="set__item__icon">
-                        <img src="../images/goal-ico.png" class="set__item__icon__src" alt="">
-                    </div>
-                    <div class="set__item__title">Низкие цены, при высоком качестве обслуживания</div>
-                    <div class="set__item__description"></div>
-                </li>
-            </ul>
-        
-        </div>
-
-        <div class="works _how-we clearfix">
-            <div class="layout-wrapper__container works__wrapper clearfix j-tab-wrapper">
-                
-                <div class="works__title">как мы работаем?</div>
-
-                <ul class="links">
-                    <li class="links__item"><a href="#" data-tab="arranging-funeral" class="links__item__link _current j-tab-trigger">• При организации похорон</a></li>
-                    <li class="links__item"><a href="#" data-tab="ordering-the-monument" class="links__item__link j-tab-trigger">• При заказе памятника</a></li>
+                        <div class="set__item__title">Высокие стандарты обслуживания</div>
+                        <div class="set__item__description">клиенты, приходящие к нам, рекомендуют нас своим знакомым</div>
+                    </li>
+                    <li class="set__item">
+                        <div class="set__item__icon">
+                            <img src="../images/people-ico.png" class="set__item__icon__src" alt="">
+                        </div>
+                        <div class="set__item__title">Профессиональный коллектив</div>
+                        <div class="set__item__description">средний стаж работников 8 лет</div>
+                    </li>
+                    <li class="set__item">
+                        <div class="set__item__icon">
+                            <img src="../images/goal-ico.png" class="set__item__icon__src" alt="">
+                        </div>
+                        <div class="set__item__title">Низкие цены, при высоком качестве обслуживания</div>
+                        <div class="set__item__description"></div>
+                    </li>
                 </ul>
-                
-                <div class="tab-content _open j-tab-item" id="tab-arranging-funeral">
-                    <ul class="steps">
-                        <li class="steps__item">
-                            <div class="steps__item__icon">
-                                <img src="../images/ico-phone2.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Вы звоните нам по телефону </div>
+
+            </div>
+
+            <div class="works _how-we clearfix">
+                <div class="layout-wrapper__container works__wrapper clearfix j-tab-wrapper">
+
+                    <div class="works__title">как мы работаем?</div>
+
+                    <ul class="links">
+                        <li class="links__item">
+                            <a href="#" data-tab="arranging-funeral" class="links__item__link _current j-tab-trigger">• При организации похорон</a>
                         </li>
-                        <li class="steps__item">
-                            <div class="steps__item__icon">
-                                <img src="../images/icon-address.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Вы посещаете похоронный дом «Ритуал»</div>
-                        </li>
-                        <li class="steps__item">
-                            <div class="steps__item__icon">
-                                <img src="../images/icon-user.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Так же к Вам может приехать распорядитель похорон</div>
-                        </li>
-                        <li class="steps__item">
-                            <div class="steps__item__icon">
-                                <img src="../images/icon-plan.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Мы согласовываем с Вами план похорон</div>
-                        </li>
-                        <li class="steps__item">
-                            <div class="steps__item__icon">
-                                <img src="../images/icon-ending.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Мы проводим похороны</div>
+                        <li class="links__item">
+                            <a href="#" data-tab="ordering-the-monument" class="links__item__link j-tab-trigger">• При заказе памятника</a>
                         </li>
                     </ul>
-                </div>
 
-                <div class="tab-content j-tab-item" id="tab-ordering-the-monument">
-                    <ul class="steps">
-                        <li class="steps__item _long">
-                            <div class="steps__item__icon">
-                                <img src="../images/ico-phone2.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Вы звоните нам по телефону</div>
-                        </li>
-                        <li class="steps__item _long">
-                            <div class="steps__item__icon">
-                                <img src="../images/icon-address.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Вы посещаете похоронный<br>дом «Ритуал»</div>
-                        </li>
-                        <li class="steps__item _long">
-                            <div class="steps__item__icon">
-                                <img src="../images/Icon-eskiz.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Мы согласовываем с Вами эскиз</div>
-                        </li>
-                        <li class="steps__item _long">
-                            <div class="steps__item__icon">
-                                <img src="../images/Icon-dok.png" class="steps__item__icon__src" alt="">
-                            </div>
-                            <div class="steps__item__title">Заключаем договор</div>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="tab-content _open j-tab-item" id="tab-arranging-funeral">
+                        <ul class="steps">
+                            <li class="steps__item">
+                                <div class="steps__item__icon">
+                                    <img src="../images/ico-phone2.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Вы звоните нам по телефону</div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item__icon">
+                                    <img src="../images/icon-address.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Вы посещаете похоронный дом «Ритуал»</div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item__icon">
+                                    <img src="../images/icon-user.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Так же к Вам может приехать распорядитель похорон</div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item__icon">
+                                    <img src="../images/icon-plan.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Мы согласовываем с Вами план похорон</div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item__icon">
+                                    <img src="../images/icon-ending.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Мы проводим похороны</div>
+                            </li>
+                        </ul>
+                    </div>
 
-            </div>
-        </div>
-        
-        <div class="layout-wrapper__container _large clearfix">
-            <div class="service__header decoration _bottom">
-                Бюро похоронных услуг "Мемориал" предлагает следующие <br>дополнительные услуги:
-            </div>
+                    <div class="tab-content j-tab-item" id="tab-ordering-the-monument">
+                        <ul class="steps">
+                            <li class="steps__item _long">
+                                <div class="steps__item__icon">
+                                    <img src="../images/ico-phone2.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Вы звоните нам по телефону</div>
+                            </li>
+                            <li class="steps__item _long">
+                                <div class="steps__item__icon">
+                                    <img src="../images/icon-address.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Вы посещаете похоронный
+                                    <br>дом «Ритуал»</div>
+                            </li>
+                            <li class="steps__item _long">
+                                <div class="steps__item__icon">
+                                    <img src="../images/Icon-eskiz.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Мы согласовываем с Вами эскиз</div>
+                            </li>
+                            <li class="steps__item _long">
+                                <div class="steps__item__icon">
+                                    <img src="../images/Icon-dok.png" class="steps__item__icon__src" alt="">
+                                </div>
+                                <div class="steps__item__title">Заключаем договор</div>
+                            </li>
+                        </ul>
+                    </div>
 
-            <ul class="service">
-                <li class="service__item is-hover">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/documents.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Бесплатная помощь в оформлении всех необходимых документов</span>
-                    </a>
-                </li>
-
-                <li class="service__item">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/care-grave.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Уход за могилой</span>
-                    </a>
-                </li>
-                <li class="service__item">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/removal-body.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Вынос гроба с телом умершего</span>
-                    </a>
-                </li>
-                <li class="service__item">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/incidental-music.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Предоставление траурного зала, музыкальное сопровождение похорон</span>
-                    </a>
-                </li>
-                <li class="service__item no-mobile">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/monuments.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Изготовление и установка памятников</span>
-                    </a>
-                </li>
-                <li class="service__item no-mobile">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/ritual-elevator.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Ритуальный лифт</span>
-                    </a>
-                </li>
-                <li class="service__item no-mobile">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/cargo-200.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Отправка - приемка <br>«Груз 200»</span>
-                    </a>
-                </li>
-                <li class="service__item no-mobile">
-                    <a href="" class="service__item__link">
-                        <span class="service__item__circle"><img src="../images/service/сremation.png" class="service__item__circle__src" alt=""></span>
-                        <span class="service__item__title">Кремация</span>
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
-
-        <div class="info">
-            <div class="info__wrapper">
-                <div class="info__content">
-                    <em>Подробнее о дополнительных ритуальных услугах, предоставляемых похоронным бюро "Мемориал" <br>в Краснодаре вы можете узнать из <a href="">каталога</a> услуг</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="works _large _np clearfix">
-            <div class="works__header">
-                <div class="decoration _bottom _white">
-                    Вы также можете приобрести в похоронном бюро "Мемориал" <br>следующую продукцию:
                 </div>
             </div>
 
-            <div class="layout-wrapper__container works__wrapper clearfix">
-                <ul class="products">
-                    <li class="products__item">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/coffin.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Гробы</span>
+            <div class="layout-wrapper__container _large clearfix">
+                <div class="service__header decoration _bottom">
+                    Бюро похоронных услуг "Мемориал" предлагает следующие
+                    <br>дополнительные услуги:
+                </div>
+
+                <ul class="service">
+                    <li class="service__item is-hover">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/documents.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Бесплатная помощь в оформлении всех необходимых документов</span>
                         </a>
                     </li>
-                    <li class="products__item">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/wreath.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Венки и траурные ленты</span>
+
+                    <li class="service__item">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/care-grave.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Уход за могилой</span>
                         </a>
                     </li>
-                    <li class="products__item">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/crest.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Ритуальные принадлежности</span>
+                    <li class="service__item">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/removal-body.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Вынос гроба с телом умершего</span>
                         </a>
                     </li>
-                    <li class="products__item">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/monument.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Мраморные и гранитные памятники</span>
+                    <li class="service__item">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/incidental-music.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Предоставление траурного зала, музыкальное сопровождение похорон</span>
                         </a>
                     </li>
-                    <li class="products__item no-mobile">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/fence.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Изделия из металла</span>
+                    <li class="service__item no-mobile">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/monuments.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Изготовление и установка памятников</span>
                         </a>
                     </li>
-                    <li class="products__item no-mobile">
-                        <a href="" class="products__item__link">
-                            <span class="products__item__circle"><img src="../images/products/labels.png" class="products__item__circle__src" alt=""></span>
-                            <span class="products__item__name">Изготовление надписей</span>
+                    <li class="service__item no-mobile">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/ritual-elevator.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Ритуальный лифт</span>
+                        </a>
+                    </li>
+                    <li class="service__item no-mobile">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/cargo-200.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Отправка - приемка
+                                <br>«Груз 200»</span>
+                        </a>
+                    </li>
+                    <li class="service__item no-mobile">
+                        <a href="" class="service__item__link">
+                            <span class="service__item__circle">
+                                <img src="../images/service/сremation.png" class="service__item__circle__src" alt="">
+                            </span>
+                            <span class="service__item__title">Кремация</span>
                         </a>
                     </li>
                 </ul>
+
             </div>
-        </div>
-        
-        <div class="layout-wrapper__container clearfix">
-            
-            <div class="decoration">
-                <p>Когда нас покидают близкие нам люди..... В такие моменты кажется, что жизнь теряет смысл и нет сил ни о чем думать. Подготовка к похоронам, процесс выбора места захоронения, покупка гроба и других принадлежностей кажется невыполнимой задачей. Бюро ритуальных услуг "Мемориал" поможет в организации похорон и полностью возьмет на себя полное обеспечение процесса погребения.</p>
 
-                <p>Также на сайте Вы найдёте информацию об организации похорон, о том, какие ритуальные услуги существуют, какие ритуальные принадлежности требуются для погребения. Что необходимо сделать в первую очередь после смерти человека. Как правильно организовать траурную панихиду и выбрать ритуальный памятник. Надеемся, что информация, размещаемая на сайте, поможет Вам в трудную минуту.</p>
-
-                <p><strong>Организация похорон в похоронном бюро "Мемориал»</strong><br>На нашем сайте Вы можете выбрать: памятники, венки, ограды и заказать ритуальные услуги. Купить гроб или купить венок в нашем магазине Вы можете на сайте, просто оставив заявку на определенную модели, или приехать в наше бюро. Цены на ритуальные услуги указаны в соответствующих разделах.</p>
-                
-                <div class="layout-phone">
-                    <div class="layout-phone__title">За консультацией по организации похорон обращайтесь к нашим менеджерам <br>в отдел продаж по телефону:</div>
-                    <div class="layout-phone__item">
-                        <a href="" class="layout-phone__item__link">+ 7 861 222 25 61</a>
+            <div class="info">
+                <div class="info__wrapper">
+                    <div class="info__content">
+                        <em>Подробнее о дополнительных ритуальных услугах, предоставляемых похоронным бюро "Мемориал"
+                            <br>в Краснодаре вы можете узнать из
+                            <a href="">каталога</a>услуг</em>
                     </div>
                 </div>
             </div>
-            
+
+            <div class="works _large _np clearfix">
+                <div class="works__header">
+                    <div class="decoration _bottom _white">
+                        Вы также можете приобрести в похоронном бюро "Мемориал"
+                        <br>следующую продукцию:
+                    </div>
+                </div>
+
+                <div class="layout-wrapper__container works__wrapper clearfix">
+                    <ul class="products">
+                        <li class="products__item">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/coffin.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Гробы</span>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/wreath.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Венки и траурные ленты</span>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/crest.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Ритуальные принадлежности</span>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/monument.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Мраморные и гранитные памятники</span>
+                            </a>
+                        </li>
+                        <li class="products__item no-mobile">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/fence.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Изделия из металла</span>
+                            </a>
+                        </li>
+                        <li class="products__item no-mobile">
+                            <a href="" class="products__item__link">
+                                <span class="products__item__circle">
+                                    <img src="../images/products/labels.png" class="products__item__circle__src" alt="">
+                                </span>
+                                <span class="products__item__name">Изготовление надписей</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layout-wrapper__container clearfix">
+
+                <div class="decoration">
+                    <p>Когда нас покидают близкие нам люди..... В такие моменты кажется, что жизнь теряет смысл и нет сил ни о чем думать. Подготовка к похоронам, процесс выбора места захоронения, покупка гроба и других принадлежностей кажется невыполнимой
+                        задачей. Бюро ритуальных услуг "Мемориал" поможет в организации похорон и полностью возьмет на себя полное обеспечение процесса погребения.</p>
+
+                    <p>Также на сайте Вы найдёте информацию об организации похорон, о том, какие ритуальные услуги существуют, какие ритуальные принадлежности требуются для погребения. Что необходимо сделать в первую очередь после смерти человека. Как правильно
+                        организовать траурную панихиду и выбрать ритуальный памятник. Надеемся, что информация, размещаемая на сайте, поможет Вам в трудную минуту.</p>
+
+                    <p>
+                        <strong>Организация похорон в похоронном бюро "Мемориал»</strong>
+                        <br>На нашем сайте Вы можете выбрать: памятники, венки, ограды и заказать ритуальные услуги. Купить гроб или купить венок в нашем магазине Вы можете на сайте, просто оставив заявку на определенную модели, или приехать в наше бюро.
+                        Цены на ритуальные услуги указаны в соответствующих разделах.</p>
+
+                    <div class="layout-phone">
+                        <div class="layout-phone__title">За консультацией по организации похорон обращайтесь к нашим менеджерам
+                            <br>в отдел продаж по телефону:</div>
+                        <div class="layout-phone__item">
+                            <a href="" class="layout-phone__item__link">+ 7 861 222 25 61</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
-
-<footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-    <div class="layout-footer__contacts">
-        <div class="layout-wrapper__container clearfix">
-            <ul class="contact">
-                <li class="contact__item">
-                    <div class="contact__item__title">АДРЕС:</div>
-                    <div class="contact__item__content">г. Краснодар, ул. 4-я линия, д. 57</div>
-                </li>
-                <li class="contact__item">
-                    <div class="contact__item__title">Е-MAIL:</div>
-                    <div class="contact__item__content">memorial93@mail.ru</div>
-                </li>
-                <li class="contact__item">
-                    <div class="contact__item__title">ТЕЛЕФОНЫ:</div>
-                    <div class="contact__item__content">+7 861 222 25 61; + 7 901 490 54 74</div>
-                </li>
-            </ul>
+    <footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="layout-footer__contacts">
+            <div class="layout-wrapper__container clearfix">
+                <ul class="contact">
+                    <li class="contact__item">
+                        <div class="contact__item__title">АДРЕС:</div>
+                        <div class="contact__item__content">г. Краснодар, ул. 4-я линия, д. 57</div>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__item__title">Е-MAIL:</div>
+                        <div class="contact__item__content">memorial93@mail.ru</div>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__item__title">ТЕЛЕФОНЫ:</div>
+                        <div class="contact__item__content">+7 861 222 25 61; + 7 901 490 54 74</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    
-	<div class="layout-footer__wrapper">
-		
-		<div class="layout-footer__checking-account">
-			ИНН 2309104908     КПП 231101001   р/с 40702810600000001835 в АО "ЮМК БАНК" г. Краснодар   к/с 30101810600000000830   БИК 040349830<br>ОГРН 1072309017241   ОКПО 81815563
-		</div>
 
-		<div class="layout-footer__copiright copiright">
-            <div class="copiright__text">Copyright © 2016 «Мемориал»<br>Все права защищены</div>
+        <div class="layout-footer__wrapper">
+
+            <div class="layout-footer__checking-account">
+                ИНН 2309104908 КПП 231101001 р/с 40702810600000001835 в АО "ЮМК БАНК" г. Краснодар к/с 30101810600000000830 БИК 040349830
+                <br>ОГРН 1072309017241 ОКПО 81815563
+            </div>
+
+            <div class="layout-footer__copiright copiright">
+                <div class="copiright__text">Copyright © 2016 «Мемориал»
+                    <br>Все права защищены</div>
+            </div>
+
+            <div class="layout-footer__web-studio web-studio">
+                Разработка сайта
+                <a href="http://rus-technologia.ru/" class="web-studio__link" target="_blank">«Русь-технология»</a>
+            </div>
+
         </div>
-		
-		<div class="layout-footer__web-studio web-studio">
-			Разработка сайта <a href="http://rus-technologia.ru/" class="web-studio__link" target="_blank">«Русь-технология»</a>
-		</div>
+    </footer>
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/app.min.js"></script>
 
-	</div>
-</footer>
-<script src="../js/vendor.min.js"></script>
-<script src="../js/app.min.js"></script>
-
-
-
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
 <![endif]-->
 
 </body>
+
 </html>
