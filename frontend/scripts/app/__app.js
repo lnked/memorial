@@ -16,12 +16,16 @@ var app = app || {};
 
             $('body').on('click', '.j-open-popup', function(e){
                 e.preventDefault();
-                var popup = '', $popup = null, header = '';
+                var popup = '', $popup = null, header = '', product = '';
 
                 popup = $(this).attr('href');
 
                 if (popup) {
                     popup = 'tmpl-' + popup.substr(1);
+                }
+
+                if ($(this).data('product')) {
+                    product = $(this).data('product');
                 }
 
                 if ($(this).data('title')) {
@@ -32,6 +36,10 @@ var app = app || {};
 
                 $popup.addClass('temp');
                 
+                if ($popup.find('input[name="product"]')) {
+                    $popup.find('input[name="product"]').val(product);
+                }
+
                 $popup.find('input[name="title_form"]').val(header);
 
                 $popup.find('.popup__header__title').html(header);
