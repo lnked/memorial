@@ -41,15 +41,20 @@ body, input, textarea, select, button {
         padding-left: 30px !important;
         padding-right: 30px !important;
     }
-
+    
     .no-mobile {
         display: none;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .layout-wrapper__container, .layout-footer__wrapper, .service-info__wrapper, .layout-header__wrapper, .breadcrumbs__wrapper, .info__wrapper, .reviews__item__wrapper, .slider__item__wrapper {
+    .layout-wrapper__container, .layout-footer__wrapper, .service-info__wrapper, .layout-header__wrapper, .breadcrumbs__wrapper, .info__wrapper, .slider__item__wrapper {
         padding-left: 10px !important;
         padding-right: 10px !important;
+    }
+
+    .reviews__item__wrapper {
+        padding-left: 30px !important;
+        padding-right: 30px !important;   
     }
 }
