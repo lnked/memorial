@@ -34,6 +34,8 @@ var app = app || {};
                 
                 $popup.find('input[name="title_form"]').val(header);
 
+                $popup.find('.popup__header__title').html(header);
+
                 $('body').append($popup);
 
                 $overlay.addClass('visible');
