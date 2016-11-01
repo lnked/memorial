@@ -1,0 +1,23 @@
+ol {
+    counter-reset: numeric; 
+
+    li {
+        clear: both;
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            counter-increment: numeric;
+            content: counter(numeric) "."; 
+        }
+    }
+
+    &, &:not([class]) {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
