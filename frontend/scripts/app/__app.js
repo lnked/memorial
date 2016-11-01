@@ -34,6 +34,8 @@ var app = app || {};
 
                 $popup = $(template(popup, { 'header': header }));
 
+                console.log($popup);
+                
                 $popup.addClass('temp');
                 
                 if ($popup.find('input[name="product"]')) {

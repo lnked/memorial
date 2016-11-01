@@ -19,7 +19,7 @@ $.popup.open('popup-choose-photo-source/nested-tab');
 			element: '#overlay'
 		},
 		overlayClickClose: !0,
-		cssPosition: !0,
+		cssPosition: !1,
 		bodyclass: !0,
 		hashCheck: !0,
 		hashChange: !0,
@@ -72,6 +72,11 @@ $.popup.open('popup-choose-photo-source/nested-tab');
         _getPosition: function($popup) 
         {
         	popup = this;
+
+            if (!defaults.cssPosition)
+            {
+                return {};
+            }
 
 			var prop = {},
 				ww = $win.width(),

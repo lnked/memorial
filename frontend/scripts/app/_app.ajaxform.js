@@ -96,6 +96,10 @@ var app = app || {};
 
                 $.popup.close();
                 $.popup.message(title, response.message);
+
+                setTimeout(function(){
+                    $.popup.close();
+                }, 2000);
 			}
 
 		},
