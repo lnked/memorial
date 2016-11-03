@@ -196,7 +196,7 @@
             &__title {
                 margin-bottom: 10px;
                 font-size: 4rem !important;
-                line-height: 1.375 !important;
+                line-height: 1.1 !important;
             }
 
             &__middle {
@@ -216,7 +216,10 @@
             padding: 0 40px;
 
             &__text {
+                overflow: hidden;
+                max-height: 130px;
                 font-size: 1.4rem;
+                margin-bottom: 12px;
             }
         }
     }
